@@ -1,0 +1,210 @@
+---
+title: "Spaceship Titanic Models"
+author: "Hazem Masarani & Lam"
+date: "2026-03-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load packages
+```{r}
+
+if (!requireNamespace("tidyverse")) install.packages('tidyverse')
+if (!requireNamespace("caret")) install.packages('caret')
+if (!requireNamespace("leaps")) install.packages('leaps')
+if (!requireNamespace("bestglm")) install.packages('bestglm')
+if (!requireNamespace("MASS")) install.packages('MASS')
+if (!requireNamespace("ggplot2")) install.packages('ggplot2')
+if (!requireNamespace("gridExtra")) install.packages('gridExtra')
+if (!requireNamespace("dplyr"))install.packages("dplyr")
+if (!requireNamespace("rpart"))install.packages("rpart")
+if (!requireNamespace("reshape2"))install.packages("reshape2")
+
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(caret)
+library(leaps)
+library(bestglm)
+library(MASS)
+library(dplyr)
+library(rpart)
+library(reshape2)
+```
+
+# load files
+```{r}
+data <- read_csv("../data/preprocessed_data.csv")
+test <- read_csv("../data/preprocessed_test.csv")
+head(data)
+head(test)
+```
+
+# Show columns
+```{r}
+colnames(data)
+```
+
+# Random Forest Model
+## Selected Columns
+```{r}
+# , "Number"
+selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "total_spending")
+```
+
+## Target Column
+```{r}
+target_column <- c("Transported")
+```
+
+## Prepare the training data.
+```{r}
+train_index <- createDataPartition(data$Transported, p = 0.9, list = FALSE)
+
+train_data <- data[train_index, c(selected_columns, target_column)]
+
+# Extract 10% of the data to measure model performance.
+holdout_data <- data[-train_index, c(selected_columns, target_column)]
+
+# Convert target to factor (IMPORTANT for classification)
+train_data$Transported <- as.factor(train_data$Transported)
+holdout_data$Transported <- as.factor(holdout_data$Transported)
+```
+
+
+## K-fold definition
+```{r}
+control <- trainControl(
+  method = "repeatedcv",     # k-fold cross validation
+  number = 5,        # k = 5 folds (you can use 10 as well)
+  verboseIter = TRUE
+)
+```
+## Train Random Forest with k-fold
+```{r}
+rf_model <- train(
+  Transported ~ .,
+  data = train_data,
+  method = "rf",
+  trControl = control,
+  ntree = 200,
+  importance = TRUE
+)
+rf_model
+```
+## Feature importance
+```{r}
+varImp(rf_model)
+plot(varImp(rf_model))
+```
+## Sample from trained data to discuss model weakness.
+```{r}
+pred <- predict(rf_model, holdout_data)
+```
+## Confusion matrix
+```{r}
+confusionMatrix(pred, holdout_data$Transported)
+```
+## extract errors
+```{r}
+holdout_data$pred <- pred
+
+# False Positives
+false_positive <- holdout_data %>%
+  filter(pred == 1 & Transported == 0)
+
+# False Negatives
+false_negative <- holdout_data %>%
+  filter(pred == 0 & Transported == 1)
+```
+```{r}
+summary(false_negative)
+```
+```{r}
+summary(false_positive)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
