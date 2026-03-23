@@ -1,0 +1,157 @@
+---
+title: "Spaceship Titanic EDA"
+author: "Hazem Masarani & Lam"
+date: "2026-03-22"
+output: html_document
+---
+
+# Load packages
+```{r}
+
+if (!requireNamespace("tidyverse")) install.packages('tidyverse')
+if (!requireNamespace("caret")) install.packages('caret')
+if (!requireNamespace("leaps")) install.packages('leaps')
+if (!requireNamespace("bestglm")) install.packages('bestglm')
+if (!requireNamespace("MASS")) install.packages('MASS')
+if (!requireNamespace("ggplot2")) install.packages('ggplot2')
+if (!requireNamespace("gridExtra")) install.packages('gridExtra')
+if (!requireNamespace("dplyr"))install.packages("dplyr")
+if (!requireNamespace("rpart"))install.packages("rpart")
+if (!requireNamespace("reshape2"))install.packages("reshape2")
+
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(caret)
+library(leaps)
+library(bestglm)
+library(MASS)
+library(dplyr)
+library(rpart)
+library(reshape2)
+```
+
+# load files
+```{r}
+data <- read_csv("../data/preprocessed_data.csv")
+test <- read_csv("../data/preprocessed_test.csv")
+head(data)
+head(test)
+```
+
+# Select only important columns
+```{r}
+selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "total_spending", "Cabin_num", "Side", "Number", "GroupNumberCount", "FamilyMembersCount", "FamilyMembersCabinCount", "NameFlag", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "DeckG_midCabin", "DeckE_midCabin", "DeckF_midCabin", "CryoSleep_spending_conflict", "Transported")
+
+data <- data[, selected_columns]
+```
+
+# Print corolation heatmap of all numeric features
+```{r}
+numeric_data <- data[, sapply(data, is.numeric)]
+
+cor_matrix <- cor(numeric_data, use = "complete.obs")
+
+cor_melted <- melt(cor_matrix)
+
+ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile() +
+  geom_text(aes(label = round(value, 2)), size = 2) +  # show numbers
+  scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(size = 16),
+    axis.text = element_text(size = 10)
+  ) +
+  labs(fill = "Correlation", title = "Correlation Heatmap")
+```
+
+
+# Cabin Number Analysis
+```{r}
+# Group and reshape (like groupby + unstack)
+
+# Create count table
+transported_counts <- table(data$Deck, data$Transported)
+
+# Convert to data frame (optional, for plotting)
+transported_df <- as.data.frame.matrix(transported_counts)
+
+print(transported_df)
+
+# Bar plot (base R, side-by-side)
+
+barplot(
+  t(transported_counts), 
+  beside = TRUE,
+  col = c("red", "green"),
+  legend.text = c("Not Transported", "Transported"),
+  args.legend = list(title = "Transported"),
+  main = "Transported vs Not Transported Passengers per Deck",
+  xlab = "Deck",
+  ylab = "Number of Passengers"
+)
+```
+
+
+# Number of Passenger per Deck:
+```{r}
+# Count number of passengers per deck
+passengers_per_deck <- table(data$Deck)
+passengers_per_deck
+
+# Bar plot
+barplot(
+  passengers_per_deck,
+  col = "orange",
+  main = "Number of Passengers per Deck",
+  xlab = "Deck",
+  ylab = "Number of Passengers"
+)
+```
+
+```{r}
+cryosleep_transport_rate <- data %>%
+  filter(!is.na(Transported)) %>%             # drop missing Transported
+  group_by(CryoSleep, Deck) %>%
+  summarise(Transported = mean(Transported), .groups = "drop")  # mean transport rate
+cryosleep_transport_rate
+ggplot(cryosleep_transport_rate, aes(x = Deck, y = Transported, fill = as.factor(CryoSleep))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(
+    title = "Transport Rate by Deck and CryoSleep",
+    y = "Proportion Transported",
+    fill = "CryoSleep"
+  ) +
+  theme_minimal()
+```
+
+# Age Analysis
+```{r}
+head(data, n=100)
+
+ggplot(data, aes(x = Deck, y = Age)) +
+  geom_boxplot(fill = "lightblue") +
+  labs(title = "Age Distribution by Deck",
+       x = "Deck",
+       y = "Age") +
+  theme_minimal()
+
+numeric_data <- data[sapply(data, is.numeric)]
+cor_matrix <- cor(numeric_data, use = "complete.obs")
+cor_matrix["Age", ]
+
+ggplot(data, aes(x = factor(CryoSleep), y = Age)) +
+  geom_boxplot()
+
+ggplot(data, aes(x = factor(VIP), y = Age)) +
+  geom_boxplot()
+```
+
+
+# Show all final columns
+```{r}
+colnames(data)
+```
+
