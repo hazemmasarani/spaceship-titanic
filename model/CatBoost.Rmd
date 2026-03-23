@@ -1,0 +1,225 @@
+---
+title: "Spaceship Titanic Cataboost"
+author: "Hazem Masarani & Lam"
+date: "2026-03-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Load packages
+```{r}
+
+if (!requireNamespace("tidyverse")) install.packages('tidyverse')
+if (!requireNamespace("caret")) install.packages('caret')
+if (!requireNamespace("leaps")) install.packages('leaps')
+if (!requireNamespace("bestglm")) install.packages('bestglm')
+if (!requireNamespace("MASS")) install.packages('MASS')
+if (!requireNamespace("ggplot2")) install.packages('ggplot2')
+if (!requireNamespace("gridExtra")) install.packages('gridExtra')
+if (!requireNamespace("dplyr"))install.packages("dplyr")
+if (!requireNamespace("rpart"))install.packages("rpart")
+if (!requireNamespace("reshape2"))install.packages("reshape2")
+if(!require(devtools)) install.packages("devtools")
+
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(caret)
+library(leaps)
+library(bestglm)
+library(MASS)
+library(dplyr)
+library(rpart)
+library(reshape2)
+devtools::install_github('catboost/catboost', subdir = 'catboost/R-package')
+```
+
+# load files
+```{r}
+data <- read_csv("../data/preprocessed_data.csv")
+test <- read_csv("../data/preprocessed_test.csv")
+head(data)
+head(test)
+```
+## Show columns
+```{r}
+colnames(data)
+```
+
+
+## Selected Columns
+```{r}
+selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "total_spending")
+
+```
+
+## Target Column
+```{r}
+target_column <- c("Transported")
+```
+
+```{r}
+set.seed(123)
+k <- 5
+folds <- createFolds(data$Transported, k = k, list = TRUE, returnTrain = FALSE)
+```
+
+```{r}
+results <- data.frame(Fold = integer(),
+                      Accuracy = numeric(),
+                      Sensitivity = numeric(),
+                      Specificity = numeric(),
+                      Kappa = numeric(),
+                      stringsAsFactors = FALSE)
+
+for(i in 1:k) {
+  
+  test_idx <- folds[[i]]
+  train_idx <- setdiff(1:nrow(data), test_idx)
+  
+  train_pool <- catboost.load_pool(data = data[train_idx, selected_columns],
+                                   label = data$Transported[train_idx],
+                                   cat_features = which(colnames(data[selected_columns]) %in% cat_features))
+  
+  test_pool <- catboost.load_pool(data = data[test_idx, selected_columns],
+                                  label = data$Transported[test_idx],
+                                  cat_features = which(colnames(data[selected_columns]) %in% cat_features))
+  
+  params <- list(
+    iterations = 1000,
+    depth = 6,
+    learning_rate = 0.05,
+    loss_function = 'Logloss',
+    eval_metric = 'Accuracy',
+    random_seed = 123,
+    od_type = 'Iter',
+    od_wait = 50
+  )
+  
+  model <- catboost.train(learn_pool = train_pool,
+                          test_pool = test_pool,
+                          params = params)
+  
+  preds <- catboost.predict(model, test_pool, prediction_type = 'Class')
+  
+  cm <- confusionMatrix(factor(preds), factor(data$Transported[test_idx]))
+  
+  results <- rbind(results, data.frame(Fold = i,
+                                       Accuracy = cm$overall['Accuracy'],
+                                       Sensitivity = cm$byClass['Sensitivity'],
+                                       Specificity = cm$byClass['Specificity'],
+                                       Kappa = cm$overall['Kappa']))
+}
+
+results
+apply(results[, -1], 2, mean)  # average metrics across folds
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
