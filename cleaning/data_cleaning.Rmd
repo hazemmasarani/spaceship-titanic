@@ -1,0 +1,368 @@
+---
+title: "Spaceship Titanic Data Cleaning"
+author: "Hazem Masarani & Lam"
+date: "2026-03-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Load packages
+```{r}
+
+if (!requireNamespace("tidyverse")) install.packages('tidyverse')
+if (!requireNamespace("caret")) install.packages('caret')
+if (!requireNamespace("leaps")) install.packages('leaps')
+if (!requireNamespace("bestglm")) install.packages('bestglm')
+if (!requireNamespace("MASS")) install.packages('MASS')
+if (!requireNamespace("ggplot2")) install.packages('ggplot2')
+if (!requireNamespace("gridExtra")) install.packages('gridExtra')
+if (!requireNamespace("dplyr"))install.packages("dplyr")
+if (!requireNamespace("rpart"))install.packages("rpart")
+
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(caret)
+library(leaps)
+library(bestglm)
+library(MASS)
+library(dplyr)
+library(rpart)
+```
+
+
+![Alt text or caption](../data_info.png)
+
+# load files
+```{r}
+
+data <- read_csv("../data/train.csv")
+test <- read_csv("../data/test.csv")
+head(data)
+head(test)
+
+```
+
+```{r}
+# Summary
+summary(data)
+summary(test)
+```
+
+
+```{r}
+# Convert to dataframe
+data <- data.frame(data)
+test <- data.frame(test)
+
+# Dtype
+str(data)
+str(test)
+
+# NA
+colSums(is.na(data))
+colSums(is.na(test))
+```
+# Extract the group number from the passenger ID.
+```{r}
+data$Group <- as.integer(sub(".*_", "", data$PassengerId))
+test$Group <- as.integer(sub(".*_", "", test$PassengerId))
+data$Number <- as.integer(sub("_.*", "", data$PassengerId))
+test$Number <- as.integer(sub("_.*", "", test$PassengerId))
+unique(data$Group)
+```
+
+# Fill missing Homeplanet and Destination by Other
+```{r}
+# Home Planet
+sum(is.na(data$HomePlanet))
+unique(data$HomePlanet)
+sum(is.na(test$HomePlanet))
+unique(test$HomePlanet)
+
+## Fill NA by Other
+data$HomePlanet[is.na(data$HomePlanet)] <- "Other"
+test$HomePlanet[is.na(test$HomePlanet)] <- "Other"
+
+## Fill NA by Other
+data$Destination[is.na(data$Destination)] <- "Other"
+test$Destination[is.na(test$Destination)] <- "Other"
+
+sum(is.na(data$HomePlanet))
+unique(data$HomePlanet)
+sum(is.na(test$HomePlanet))
+unique(test$HomePlanet)
+
+
+sum(is.na(data$Destination))
+unique(data$Destination)
+sum(is.na(test$Destination))
+unique(test$Destination)
+```
+
+# Fill missing VIP by FALSE
+```{r}
+# Fill missing VIP values with FALSE
+data <- data %>%
+  mutate(VIP = ifelse(is.na(VIP), FALSE, VIP))
+
+test <- test %>%
+  mutate(VIP = ifelse(is.na(VIP), FALSE, VIP))
+```
+
+# Fill missing spendings by 0 and compute total spending.
+```{r}
+# Step 1: Make spending numeric
+spending_cols <- c("RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck")
+data[spending_cols] <- lapply(data[spending_cols], as.numeric)
+test[spending_cols] <- lapply(test[spending_cols], as.numeric)
+
+# Step 2: Convert NA to 0 for any spending ("RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck").
+# List of attributes to fill
+cols_to_fill <- c("RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck")
+# Fill NAs with 0 in data
+data <- data %>%
+  mutate(across(all_of(cols_to_fill), ~ ifelse(is.na(.), 0, .)))
+# Fill NAs with 0 in test
+test <- test %>%
+  mutate(across(all_of(cols_to_fill), ~ ifelse(is.na(.), 0, .)))
+
+# Step 3: Compute total spending per passenger
+data$total_spending <- rowSums(data[spending_cols], na.rm = TRUE)
+test$total_spending <- rowSums(test[spending_cols], na.rm = TRUE)
+```
+
+# Split Cabin into Deck, Cabin_num, Side
+```{r}
+# Cabin Number Split:
+data[c("Deck", "Cabin_num", "Side")] <- do.call(rbind, strsplit(data$Cabin, "/"))
+test[c("Deck", "Cabin_num", "Side")] <- do.call(rbind, strsplit(test$Cabin, "/"))
+```
+
+
+# Fill missing Decks Based on total spending
+```{r}
+# Step 1: Compute deck means across both datasets
+combined <- bind_rows(data, test)
+
+deck_means <- combined %>%
+  filter(!is.na(Deck)) %>%   # exclude NAs here
+  group_by(Deck) %>%
+  summarise(mean_total_spending = mean(total_spending, na.rm = TRUE), .groups = "drop")
+
+# Step 2: Function to find closest deck
+closest_deck <- function(spending, deck_means) {
+  distances <- abs(deck_means$mean_total_spending - spending)
+  deck_means$Deck[which.min(distances)]
+}
+
+# Step 3: Fill missing Decks in data
+na_index <- which(is.na(data$Deck))
+data$Deck[na_index] <- sapply(data$total_spending[na_index], closest_deck, deck_means = deck_means)
+
+# Step 4: Fill missing Decks in test
+na_index_test <- which(is.na(test$Deck))
+test$Deck[na_index_test] <- sapply(test$total_spending[na_index_test], closest_deck, deck_means = deck_means)
+```
+
+# Fill the cabin_number with the most frequent number
+```{r}
+# Combine data and test to compute the mode
+combined <- bind_rows(
+  dplyr::select(data, Cabin_num),
+  dplyr::select(test, Cabin_num)
+)
+
+# Compute the most frequent cabin number (mode)
+mode_cabin <- as.numeric(names(sort(table(combined$Cabin_num), decreasing = TRUE)[1]))
+
+# Fill missing Cabin_num in data
+data$Cabin_num[is.na(data$Cabin_num)] <- mode_cabin
+
+# Fill missing Cabin_num in test
+test$Cabin_num[is.na(test$Cabin_num)] <- mode_cabin
+```
+
+# Fill the missing CryoSleep and convert Side to 0, and 1.
+```{r}
+combined <- bind_rows(data, test)
+
+get_mode <- function(x) {
+  ux <- unique(x[!is.na(x)])   # remove NAs
+  ux[which.max(tabulate(match(x, ux)))]
+}
+
+deck_cryosleep_mode <- combined %>%
+  filter(!is.na(CryoSleep)) %>%          # ignore NAs
+  group_by(Deck) %>%              # use Deck_filled after imputing Decks
+  summarise(mode_CryoSleep = get_mode(CryoSleep), .groups = "drop")
+
+fill_missing_CryoSleep <- function(row){
+  if(is.na(row["CryoSleep"])){
+    if(row["total_spending"] > 0){
+      row["CryoSleep"] <- FALSE
+    }else{
+      row["CryoSleep"] <- deck_cryosleep_mode$mode_CryoSleep[
+        deck_cryosleep_mode$Deck == row["Deck"]
+      ]
+    }
+  }
+  return(row)
+}
+
+# Convert Group to numeric
+convert_side_0_1 <- function(row){
+  if(is.na(row["Side"])){
+    row["Side"] = NA
+  }else if(row["Side"] == "P"){
+    row["Side"] = 1
+  }else{
+    row["Side"] = 0
+  }
+  return(row)
+}
+
+data <- as.data.frame(t(apply(data, 1, fill_missing_CryoSleep)))
+test <- as.data.frame(t(apply(test, 1, fill_missing_CryoSleep)))
+
+data <- as.data.frame(t(apply(data, 1, convert_side_0_1)))
+test <- as.data.frame(t(apply(test, 1, convert_side_0_1)))
+
+data$Age <- as.numeric(data$Age)
+data$RoomService <- as.numeric(data$RoomService)
+data$FoodCourt <- as.numeric(data$FoodCourt)
+data$ShoppingMall <- as.numeric(data$ShoppingMall)
+data$Spa <- as.numeric(data$Spa)
+data$VRDeck <- as.numeric(data$VRDeck)
+data$Group <- as.numeric(data$Group)
+data$Cabin_num <- as.numeric(data$Cabin_num)
+data$total_spending <- as.numeric(data$total_spending)
+
+data$Transported <- as.logical(data$Transported)
+data$CryoSleep   <- as.logical(data$CryoSleep)
+data$VIP         <- as.logical(data$VIP)
+
+data$Transported <- as.numeric(data$Transported)
+data$CryoSleep <- as.numeric(data$CryoSleep)
+data$VIP     <- as.numeric(data$VIP)
+
+test$Age <- as.numeric(test$Age)
+test$RoomService <- as.numeric(test$RoomService)
+test$FoodCourt <- as.numeric(test$FoodCourt)
+test$ShoppingMall <- as.numeric(test$ShoppingMall)
+test$Spa <- as.numeric(test$Spa)
+test$VRDeck <- as.numeric(test$VRDeck)
+test$Group <- as.numeric(test$Group)
+test$Cabin_num <- as.numeric(test$Cabin_num)
+test$total_spending <- as.numeric(test$total_spending)
+
+test$CryoSleep   <- as.logical(test$CryoSleep)
+test$VIP         <- as.logical(test$VIP)
+
+test$CryoSleep <- as.numeric(test$CryoSleep)
+test$VIP       <- as.numeric(test$VIP)
+
+```
+
+# Fill missing Ages by Dession tree
+```{r}
+combined <- bind_rows(data, test)
+
+# Fit a regression tree using rows with known Age
+age_tree <- rpart(
+  Age ~ Deck + VIP + CryoSleep + total_spending + RoomService + FoodCourt + ShoppingMall + Spa + VRDeck + Group,
+  data = combined[!is.na(data$Age), ],
+  method = "anova"  # anova method = regression
+)
+
+# Predict Age for missing rows
+data$Age[is.na(data$Age)] <- predict(age_tree, newdata = data[is.na(data$Age), ])
+test$Age[is.na(test$Age)] <- predict(age_tree, newdata = test[is.na(test$Age), ])
+```
+
+# Fill missing Side by simple tree model.
+```{r}
+# Combine
+combined <- bind_rows(data, test)
+
+# Split known and missing Side
+train_side <- combined %>% filter(!is.na(Side))
+missing_side <- combined %>% filter(is.na(Side))
+
+# Predictors
+predictors <- c("HomePlanet", "CryoSleep", "Destination", "Age", "VIP",
+                "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck",
+                "Group", "Deck")
+
+# Convert character → factor
+train_side[predictors] <- lapply(train_side[predictors], function(x) {
+  if(is.character(x)) factor(x) else x
+})
+
+missing_side[predictors] <- lapply(missing_side[predictors], function(x) {
+  if(is.character(x)) factor(x) else x
+})
+
+# Convert Side to factor (IMPORTANT for classification)
+train_side$Side <- factor(train_side$Side)
+
+# Fit decision tree
+side_tree <- rpart(
+  formula = as.formula(paste("Side ~", paste(predictors, collapse = " + "))),
+  data = train_side,
+  method = "class"
+)
+
+# Predict missing Side
+predicted_side <- predict(side_tree, newdata = missing_side, type = "class")
+
+# Convert existing Side to numeric
+combined$Side_num <- as.numeric(as.character(combined$Side))
+
+# Fill missing with predictions
+combined$Side_num[is.na(combined$Side_num)] <- as.numeric(as.character(predicted_side))
+
+data$Side <- combined$Side_num[1:nrow(data)]
+test$Side <- combined$Side_num[(nrow(data)+1):nrow(combined)]
+```
+
+# Fill missing cabins with the predicted Deck/Cabin_num/Side
+```{r}
+data <- data %>%
+  mutate(Side_char = ifelse(Side == 1, "P", "S"))
+
+test <- test %>%
+  mutate(Side_char = ifelse(Side == 1, "P", "S"))
+
+data <- data %>%
+  mutate(
+    Cabin = ifelse(
+      is.na(Cabin),
+      paste(Deck, Cabin_num, Side_char, sep = "/"),
+      Cabin
+    )
+  )
+
+test <- test %>%
+  mutate(
+    Cabin = ifelse(
+      is.na(Cabin),
+      paste(Deck, Cabin_num, Side_char, sep = "/"),
+      Cabin
+    )
+  )
+
+data$Side_char <- NULL
+test$Side_char <- NULL
+```
+
+# Save File after cleaning.
+```{r}
+write.csv(data, "../data/cleaned_data.csv", row.names = FALSE)
+write.csv(test, "../data/cleaned_test.csv", row.names = FALSE)
+```
