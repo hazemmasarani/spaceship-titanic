@@ -1,0 +1,268 @@
+---
+title: "Spaceship Titanic Preprocessing"
+author: "Hazem Masarani & Lam"
+date: "2026-03-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load packages
+```{r}
+
+if (!requireNamespace("tidyverse")) install.packages('tidyverse')
+if (!requireNamespace("caret")) install.packages('caret')
+if (!requireNamespace("leaps")) install.packages('leaps')
+if (!requireNamespace("bestglm")) install.packages('bestglm')
+if (!requireNamespace("MASS")) install.packages('MASS')
+if (!requireNamespace("ggplot2")) install.packages('ggplot2')
+if (!requireNamespace("gridExtra")) install.packages('gridExtra')
+if (!requireNamespace("dplyr"))install.packages("dplyr")
+if (!requireNamespace("rpart"))install.packages("rpart")
+
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(caret)
+library(leaps)
+library(bestglm)
+library(MASS)
+library(dplyr)
+library(rpart)
+```
+
+![Alt text or caption](../data_info.png)
+
+# load files
+```{r}
+
+data <- read_csv("../data/cleaned_data.csv")
+test <- read_csv("../data/cleaned_test.csv")
+head(data)
+head(test)
+
+```
+
+# Count How many passenger per Number
+```{r}
+combined <- bind_rows(
+  dplyr::select(data, Number),
+  dplyr::select(test, Number)
+)
+
+GroupNumberCountTable <- combined %>%
+  group_by(Number) %>%
+  summarise(GroupNumberCount = n())
+GroupNumberCountTable
+
+data <- data %>%
+  left_join(dplyr::select(GroupNumberCountTable, Number, GroupNumberCount), by = "Number")
+
+test <- test %>%
+  left_join(dplyr::select(GroupNumberCountTable, Number, GroupNumberCount), by = "Number")
+
+data$Number <- as.numeric(data$Number)
+test$Number <- as.numeric(test$Number)
+```
+
+# Get the family count from the common last name of the passangers
+```{r}
+data <- data %>%
+  mutate(LastName = str_extract(Name, "\\S+$"))
+
+test <- test %>%
+  mutate(LastName = str_extract(Name, "\\S+$"))
+
+combined <- bind_rows(
+  dplyr::select(dplyr::filter(data, !is.na(Name)), Name, LastName),
+  dplyr::select(dplyr::filter(test, !is.na(Name)), Name, LastName)
+)
+
+combined <- combined %>%
+  group_by(LastName) %>%
+  summarise(FamilyMembersCount = n(), .groups = "drop")
+
+# Map back to train
+data <- data %>%
+  left_join(dplyr::select(combined, LastName, FamilyMembersCount), by = "LastName")
+
+# Map back to test
+test <- test %>%
+  left_join(dplyr::select(combined, LastName, FamilyMembersCount), by = "LastName")
+
+data$FamilyMembersCount[is.na(data$FamilyMembersCount)] <- 0
+test$FamilyMembersCount[is.na(test$FamilyMembersCount)] <- 0
+```
+
+# Add feature that count the family member if in the same cabin.
+```{r}
+combined <- bind_rows(
+  dplyr::select(dplyr::filter(data, !is.na(Name)), Cabin, LastName),
+  dplyr::select(dplyr::filter(test, !is.na(Name)), Cabin, LastName)
+)
+
+combined <- combined %>%
+  group_by(Cabin, LastName) %>%
+  summarise(FamilyMembersCabinCount = n(), .groups = "drop")
+
+# Map back to train
+data <- data %>%
+  left_join(dplyr::select(combined, Cabin, LastName, FamilyMembersCabinCount), by = c("Cabin", "LastName"))
+
+# Map back to test
+test <- test %>%
+  left_join(dplyr::select(combined, Cabin, LastName, FamilyMembersCabinCount), by = c("Cabin", "LastName"))
+
+data$FamilyMembersCabinCount[is.na(data$FamilyMembersCabinCount)] <- 0
+test$FamilyMembersCabinCount[is.na(test$FamilyMembersCabinCount)] <- 0
+```
+
+
+# Name flag is 1 if name not NA
+```{r}
+data$NameFlag <- ifelse(is.na(data$Name), 0, 1)
+test$NameFlag <- ifelse(is.na(test$Name), 0, 1)
+```
+
+# Cabin Mid flag
+```{r}
+data$CabinMidFlag <- ifelse(
+  data$Cabin_num >= 275 & data$Cabin_num <= 400,
+  1, 0
+)
+
+test$CabinMidFlag <- ifelse(
+  test$Cabin_num >= 275 & test$Cabin_num <= 400,
+  1, 0
+)
+```
+
+
+# Convert class to one hot
+```{r}
+summary(data)
+```
+
+
+```{r}
+# Home planet
+unique(data$HomePlanet)
+
+# Train
+dummies <- model.matrix(~ HomePlanet - 1, data = data)
+data <- cbind(data, dummies)
+
+# Test
+dummies_test <- model.matrix(~ HomePlanet - 1, data = test)
+test <- cbind(test, dummies_test)
+```
+
+```{r}
+# Destination
+unique(data$Destination)
+
+# Train
+dummies <- model.matrix(~ Destination - 1, data = data)
+data <- cbind(data, dummies)
+
+# Test
+dummies_test <- model.matrix(~ Destination - 1, data = test)
+test <- cbind(test, dummies_test)
+```
+
+```{r}
+# Group
+data$Group <- as.factor(data$Group)
+unique(data$Group)
+
+# Train
+dummies <- model.matrix(~ Group - 1, data = data)
+data <- cbind(data, dummies)
+
+# Test
+test$Group <- as.factor(test$Group)
+dummies_test <- model.matrix(~ Group - 1, data = test)
+test <- cbind(test, dummies_test)
+```
+
+```{r}
+# Deck
+unique(data$Deck)
+
+# Train
+dummies <- model.matrix(~ Deck - 1, data = data)
+data <- cbind(data, dummies)
+
+# Test
+dummies_test <- model.matrix(~ Deck - 1, data = test)
+test <- cbind(test, dummies_test)
+```
+
+# Deck + Cabin interaction
+```{r}
+data$DeckG_midCabin <- ifelse(
+  data$DeckG == 1 & data$CabinMidFlag == 1, 1, 0
+)
+
+data$DeckE_midCabin <- ifelse(
+  data$DeckE == 1 & data$CabinMidFlag == 1, 1, 0
+)
+
+data$DeckF_midCabin <- ifelse(
+  data$DeckF == 1 & data$CabinMidFlag == 1, 1, 0
+)
+
+test$DeckG_midCabin <- ifelse(
+  test$DeckG == 1 & test$CabinMidFlag == 1, 1, 0
+)
+
+test$DeckE_midCabin <- ifelse(
+  test$DeckE == 1 & test$CabinMidFlag == 1, 1, 0
+)
+
+test$DeckF_midCabin <- ifelse(
+  test$DeckF == 1 & test$CabinMidFlag == 1, 1, 0
+)
+```
+
+# Create exception feature Fix CryoSleep weakness
+```{r}
+data$CryoSleep_spending_conflict <- ifelse(
+  data$CryoSleep == 1 & data$total_spending > 0, 1, 0
+)
+
+data$CryoSleep_spending_conflict <- ifelse(
+  data$CryoSleep == 1 & data$total_spending > 0, 1, 0
+)
+```
+
+# Spending is 0 but not cryosleep 
+```{r}
+data$NoSpending_notCryo <- ifelse(
+  data$total_spending == 0 & data$CryoSleep == 0, 1, 0
+)
+
+test$NoSpending_notCryo <- ifelse(
+  test$total_spending == 0 & test$CryoSleep == 0, 1, 0
+)
+```
+
+```{r}
+summary(data)
+```
+
+```{r}
+colnames(data)
+```
+
+```{r}
+head(data, n=20)
+```
+
+# Save data preprocessed
+```{r}
+write.csv(data, "../data/preprocessed_data.csv", row.names = FALSE)
+write.csv(test, "../data/preprocessed_test.csv", row.names = FALSE)
+```
