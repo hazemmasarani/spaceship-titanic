@@ -249,14 +249,64 @@ test$NoSpending_notCryo <- ifelse(
 )
 ```
 
+# Total family spendings
+```{r}
+combined <- bind_rows(
+  dplyr::select(dplyr::filter(data, !is.na(Name)), LastName, Cabin_num, total_spending),
+  dplyr::select(dplyr::filter(test, !is.na(Name)), LastName, Cabin_num, total_spending)
+)
+
+combined <- combined %>%
+  group_by(LastName, Cabin_num) %>%
+  summarise(
+    total_spending_family = sum(total_spending),
+    avg_spending_family = mean(total_spending)
+  )
+
+data <- data %>%
+  left_join(combined, by = c("LastName", "Cabin_num"))
+
+data$total_spending_family[is.na(data$total_spending_family)] <- 0
+data$avg_spending_family[is.na(data$avg_spending_family)] <- 0
+
+test <- test %>%
+  left_join(combined, by = c("LastName", "Cabin_num"))
+
+test$total_spending_family[is.na(test$total_spending_family)] <- 0
+test$avg_spending_family[is.na(test$avg_spending_family)] <- 0
+```
+
+```{r}
+nrow(data)
+nrow(test)
+```
+
+```{r}
+unique(data$LastName[data$FamilyMembersCabinCount > 1])
+```
+```{r}
+data[which(data$LastName == "Deva"), ]
+```
+
+```{r}
+colSums(is.na(data))
+```
+
+```{r}
+valid_names <- unique(data$LastName[!is.na(data$LastName) & data$FamilyMembersCabinCount > 1])
+random_name <- sample(valid_names, 1)
+random_name
+```
+```{r}
+data[which(data$LastName == random_name), ]
+```
+
 ```{r}
 summary(data)
 ```
-
 ```{r}
 colnames(data)
 ```
-
 ```{r}
 head(data, n=20)
 ```

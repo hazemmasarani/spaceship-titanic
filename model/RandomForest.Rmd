@@ -2,7 +2,9 @@
 title: "Spaceship Titanic Models"
 author: "Hazem Masarani & Lam"
 date: "2026-03-23"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -38,8 +40,10 @@ library(reshape2)
 # load files
 ```{r}
 data <- read_csv("../data/preprocessed_data.csv")
-test <- read_csv("../data/preprocessed_test.csv")
 head(data)
+```
+```{r}
+test <- read_csv("../data/preprocessed_test.csv")
 head(test)
 ```
 
@@ -52,7 +56,7 @@ colnames(data)
 ## Selected Columns
 ```{r}
 # , "Number"
-selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "total_spending")
+selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "avg_spending_family", "NoSpending_notCryo")
 ```
 
 ## Target Column
@@ -128,9 +132,36 @@ summary(false_positive)
 ```
 
 
+# Prepare the test data for submission
+```{r}
+PassengerIds <- test[,c("PassengerId")]
+test_data <- test[, c(selected_columns)]
+```
 
+```{r}
+test_pred <- predict(rf_model, test_data)
+```
 
+```{r}
+test_pred
+```
+```{r}
+# Ensure test_pred is the same length as PassengerId
+length(test_pred)
+length(test$PassengerId)
 
+# Make sure predictions are 0/1 → convert to TRUE/FALSE
+test_pred_logical <- ifelse(test_pred == 1, "True", "False")
+
+# Build submission
+submission <- data.frame(
+  PassengerId = test$PassengerId,
+  Transported = test_pred_logical
+)
+
+# Write CSV
+write.csv(submission, "../output/randomforest/submission.csv", row.names = FALSE, quote = TRUE)
+```
 
 
 

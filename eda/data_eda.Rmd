@@ -43,7 +43,7 @@ head(test)
 ```{r}
 selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "total_spending", "Cabin_num", "Side", "Number", "GroupNumberCount", "FamilyMembersCount", "FamilyMembersCabinCount", "NameFlag", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "DeckG_midCabin", "DeckE_midCabin", "DeckF_midCabin", "CryoSleep_spending_conflict", "Transported")
 
-data <- data[, selected_columns]
+# data <- data[, selected_columns]
 ```
 
 # Print corolation heatmap of all numeric features
@@ -69,6 +69,9 @@ ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
 
 
 # Cabin Number Analysis
+```{r}
+colnames(data)
+```
 ```{r}
 # Group and reshape (like groupby + unstack)
 
@@ -152,6 +155,8 @@ ggplot(data, aes(x = factor(VIP), y = Age)) +
 
 # Show all final columns
 ```{r}
-colnames(data)
+
 ```
+
+
 
