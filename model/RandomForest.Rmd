@@ -56,7 +56,7 @@ colnames(data)
 ## Selected Columns
 ```{r}
 # , "Number"
-selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "avg_spending_family", "NoSpending_notCryo")
+selected_columns <- c("CryoSleep", "LuxurySpendings", "total_spending", "Spa", "VRDeck", "MainSpendings", "Age", "VIP", "RoomService", "FoodCourt", "Cabin_num", "Side", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "FamilyMembersCabinCount", "avg_spending_family")
 ```
 
 ## Target Column
@@ -78,6 +78,9 @@ train_data$Transported <- as.factor(train_data$Transported)
 holdout_data$Transported <- as.factor(holdout_data$Transported)
 ```
 
+```{r}
+colSums(is.na(train_data))
+```
 
 ## K-fold definition
 ```{r}

@@ -227,15 +227,9 @@ test$DeckF_midCabin <- ifelse(
 )
 ```
 
-# Create exception feature Fix CryoSleep weakness
+# Check if cryosleep VS Spendings exists
 ```{r}
-data$CryoSleep_spending_conflict <- ifelse(
-  data$CryoSleep == 1 & data$total_spending > 0, 1, 0
-)
-
-data$CryoSleep_spending_conflict <- ifelse(
-  data$CryoSleep == 1 & data$total_spending > 0, 1, 0
-)
+head(data[data$CryoSleep == 1 & data$total_spending > 0, ])
 ```
 
 # Spending is 0 but not cryosleep 
@@ -275,6 +269,14 @@ test <- test %>%
 test$total_spending_family[is.na(test$total_spending_family)] <- 0
 test$avg_spending_family[is.na(test$avg_spending_family)] <- 0
 ```
+# Luxury, Main, Food Spendings
+```{r}
+data$LuxurySpendings <- data$Spa + data$VRDeck
+data$MainSpendings <- data$RoomService + data$ShoppingMall
+
+test$LuxurySpendings <- test$Spa + test$VRDeck
+test$MainSpendings <- test$RoomService + test$ShoppingMall
+```
 
 ```{r}
 nrow(data)
@@ -282,23 +284,7 @@ nrow(test)
 ```
 
 ```{r}
-unique(data$LastName[data$FamilyMembersCabinCount > 1])
-```
-```{r}
-data[which(data$LastName == "Deva"), ]
-```
-
-```{r}
 colSums(is.na(data))
-```
-
-```{r}
-valid_names <- unique(data$LastName[!is.na(data$LastName) & data$FamilyMembersCabinCount > 1])
-random_name <- sample(valid_names, 1)
-random_name
-```
-```{r}
-data[which(data$LastName == random_name), ]
 ```
 
 ```{r}

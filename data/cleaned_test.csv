@@ -17,7 +17,7 @@
 "0046_02","Earth","FALSE","F/11/P","TRAPPIST-1e",27,"FALSE",0,0,0,903,0,"Glene Powery",NA,2,46,903,"F","11","P"
 "0046_03","Earth","FALSE","F/11/P","TRAPPIST-1e",20,"FALSE",2,12,253,457,690,"Joanny Powery",NA,3,46,1414,"F","11","P"
 "0047_01","Europa","TRUE","B/0/S","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Winonon Prucerod",NA,1,47,0,"B","0","S"
-"0047_02","Europa","FALSE","C/97/NA","TRAPPIST-1e",29,"FALSE",0,7708,243,569,343,"Muons Prucerod",NA,2,47,8863,"C","97",NA
+"0047_02","Europa","FALSE","C/97/S","TRAPPIST-1e",29,"FALSE",0,7708,243,569,343,"Muons Prucerod",NA,2,47,8863,"C","97","S"
 "0047_03","Europa","FALSE","B/0/S","TRAPPIST-1e",40,"FALSE",26,1925,8,3144,63,NA,NA,3,47,5166,"B","0","S"
 "0048_01","Earth","FALSE","G/5/S","TRAPPIST-1e",30,"FALSE",0,878,26,3,0,"Tyle Deckerry",NA,1,48,907,"G","5","S"
 "0049_01","Earth","FALSE","E/1/P","TRAPPIST-1e",14,"FALSE",0,0,0,1609,0,"Doria Flynney",NA,1,49,1609,"E","1","P"
@@ -98,7 +98,7 @@
 "0215_01","Earth","TRUE","G/34/P","TRAPPIST-1e",23,"FALSE",0,0,0,0,0,"Jaimez Waterson",NA,1,215,0,"G","34","P"
 "0218_01","Earth","FALSE","G/35/P","TRAPPIST-1e",19,"FALSE",741,12,1,0,0,"Jenne Alshipson",NA,1,218,754,"G","35","P"
 "0226_01","Europa","FALSE","D/7/S","55 Cancri e",25,"FALSE",3,3833,8098,1531,0,"Brakis Matimple",NA,1,226,13465,"D","7","S"
-"0227_01","Earth","FALSE","G/218/NA","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Kurta Buckentry",NA,1,227,0,"G","218",NA
+"0227_01","Earth","FALSE","G/218/P","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Kurta Buckentry",NA,1,227,0,"G","218","P"
 "0228_01","Europa","TRUE","B/4/S","TRAPPIST-1e",35,"FALSE",0,0,0,0,0,"Azhasim Dompul",NA,1,228,0,"B","4","S"
 "0228_02","Europa","FALSE","B/4/S","55 Cancri e",39,"FALSE",0,25273,0,13,1714,"Zedark Asharing",NA,2,228,27000,"B","4","S"
 "0228_03","Europa","TRUE","B/4/S","55 Cancri e",42,"FALSE",0,0,0,0,0,"Alurops Dompul",NA,3,228,0,"B","4","S"
@@ -134,7 +134,7 @@
 "0280_01","Earth","FALSE","F/53/S","TRAPPIST-1e",18,"FALSE",212,678,12,0,0,"Andyn Mcfaddoxter",NA,1,280,902,"F","53","S"
 "0284_01","Mars","FALSE","E/15/P","TRAPPIST-1e",50,"FALSE",0,0,1299,0,0,"Cers Datie",NA,1,284,1299,"E","15","P"
 "0292_01","Earth","FALSE","F/56/S","TRAPPIST-1e",26,"FALSE",0,0,0,1079,281,"Jillie Chardsonnon",NA,1,292,1360,"F","56","S"
-"0293_01","Europa","TRUE","B/97/NA","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Tauxon Suptibler",NA,1,293,0,"B","97",NA
+"0293_01","Europa","TRUE","B/97/P","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Tauxon Suptibler",NA,1,293,0,"B","97","P"
 "0295_01","Earth","FALSE","F/66/P","PSO J318.5-22",35,"FALSE",0,627,0,44,0,"Guyl Hardley",NA,1,295,671,"F","66","P"
 "0296_01","Mars","FALSE","F/57/S","55 Cancri e",58,"FALSE",73,0,422,978,0,"Kohs Cort",NA,1,296,1473,"F","57","S"
 "0299_01","Earth","FALSE","F/58/S","55 Cancri e",20,"FALSE",376,0,242,1,0,"Dellia Hickett",NA,1,299,619,"F","58","S"
@@ -146,7 +146,7 @@
 "0318_01","Earth","TRUE","G/52/P","PSO J318.5-22",24,"FALSE",0,0,0,0,0,"Robyna Solon",NA,1,318,0,"G","52","P"
 "0319_01","Mars","FALSE","E/18/P","TRAPPIST-1e",17,"FALSE",1031,0,1026,42,0,"Ranats Prie",NA,1,319,2099,"E","18","P"
 "0319_02","Mars","TRUE","F/69/P","55 Cancri e",17.1615289765721,"FALSE",0,0,0,0,0,"Pigars Prie",NA,2,319,0,"F","69","P"
-"0323_01","Earth","TRUE","G/218/NA","55 Cancri e",18,"FALSE",0,0,0,0,0,"Joyn Gaineyerson",NA,1,323,0,"G","218",NA
+"0323_01","Earth","TRUE","G/218/P","55 Cancri e",18,"FALSE",0,0,0,0,0,"Joyn Gaineyerson",NA,1,323,0,"G","218","P"
 "0325_01","Earth","FALSE","G/54/P","TRAPPIST-1e",48,"FALSE",0,755,0,0,0,"Searla Mccarveymon",NA,1,325,755,"G","54","P"
 "0328_01","Earth","FALSE","F/71/P","TRAPPIST-1e",38,"FALSE",3,1252,1,0,0,"Verney Singtons",NA,1,328,1256,"F","71","P"
 "0329_01","Europa","TRUE","B/14/P","55 Cancri e",33,"FALSE",0,0,0,0,0,"Iononus Rewmid",NA,1,329,0,"B","14","P"
@@ -179,11 +179,11 @@
 "0363_02","Earth","FALSE","E/22/S","TRAPPIST-1e",8,"FALSE",0,0,0,0,0,"Kimmy Fowlesterez",NA,2,363,0,"E","22","S"
 "0363_03","Earth","TRUE","E/22/S","TRAPPIST-1e",5,"FALSE",0,0,0,0,0,"Jenn Fowlesterez",NA,3,363,0,"E","22","S"
 "0364_01","Mars","FALSE","F/81/P","TRAPPIST-1e",45,"FALSE",288,0,932,4,0,"Cinkes Chité",NA,1,364,1224,"F","81","P"
-"0364_02","Mars","FALSE","F/218/NA","TRAPPIST-1e",37,"FALSE",731,0,517,50,0,"Anakes Chité",NA,2,364,1298,"F","218",NA
+"0364_02","Mars","FALSE","F/218/S","TRAPPIST-1e",37,"FALSE",731,0,517,50,0,"Anakes Chité",NA,2,364,1298,"F","218","S"
 "0366_01","Earth","TRUE","G/52/S","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,NA,NA,1,366,0,"G","52","S"
 "0367_01","Europa","FALSE","D/11/S","55 Cancri e",55,"FALSE",0,538,0,6,5288,"Misa Dischod",NA,1,367,5832,"D","11","S"
 "0374_01","Earth","FALSE","F/86/P","TRAPPIST-1e",18,"FALSE",0,251,0,0,553,"Harrie Sterreray",NA,1,374,804,"F","86","P"
-"0374_02","Earth","FALSE","F/218/NA","TRAPPIST-1e",36,"FALSE",6,0,0,783,0,"Tamie Sterreray",NA,2,374,789,"F","218",NA
+"0374_02","Earth","FALSE","F/218/S","TRAPPIST-1e",36,"FALSE",6,0,0,783,0,"Tamie Sterreray",NA,2,374,789,"F","218","S"
 "0386_01","Mars","FALSE","D/12/S","TRAPPIST-1e",59,"FALSE",1678,0,0,0,0,"Docoos Fiha",NA,1,386,1678,"D","12","S"
 "0390_01","Earth","TRUE","G/67/P","TRAPPIST-1e",61,"FALSE",0,0,0,0,0,"Anda Mejiaddox",NA,1,390,0,"G","67","P"
 "0393_01","Earth","FALSE","G/58/S","55 Cancri e",46,"FALSE",4908,1,3,1,14,"Dellia Whitledges",NA,1,393,4927,"G","58","S"
@@ -240,7 +240,7 @@
 "0497_01","Mars","TRUE","F/107/P","TRAPPIST-1e",27,"FALSE",0,0,0,0,0,"Muebix Mepie",NA,1,497,0,"F","107","P"
 "0505_01","Earth","FALSE","F/108/P","TRAPPIST-1e",21,"FALSE",15,345,18,486,0,"Paulah Reenez",NA,1,505,864,"F","108","P"
 "0508_01","Europa","FALSE","D/20/P","55 Cancri e",37,"FALSE",4105,2081,1,118,446,"Elerops Cassiding",NA,1,508,6751,"D","20","P"
-"0509_01","Earth","TRUE","G/218/NA","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Alfrey Ewins",NA,1,509,0,"G","218",NA
+"0509_01","Earth","TRUE","G/218/P","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Alfrey Ewins",NA,1,509,0,"G","218","P"
 "0511_01","Earth","FALSE","G/76/S","Other",17,"FALSE",441,0,131,315,5,"Jaye Noelan",NA,1,511,892,"G","76","S"
 "0514_01","Earth","TRUE","G/79/P","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Erie Tersony",NA,1,514,0,"G","79","P"
 "0524_01","Europa","FALSE","T/0/S","TRAPPIST-1e",35,"FALSE",0,6442,672,238,60,"Tabius Frogauded",NA,1,524,7412,"T","0","S"
@@ -262,7 +262,7 @@
 "0558_01","Earth","FALSE","F/101/S","TRAPPIST-1e",65,"FALSE",0,804,0,0,0,"Julion Llonovancis",NA,1,558,804,"F","101","S"
 "0562_01","Mars","FALSE","F/104/S","TRAPPIST-1e",27,"FALSE",286,0,1023,0,0,"Bases Shcad",NA,1,562,1309,"F","104","S"
 "0562_02","Mars","TRUE","F/104/S","TRAPPIST-1e",13,"FALSE",0,0,0,0,0,"Sex Shcad",NA,2,562,0,"F","104","S"
-"0574_01","Mars","FALSE","F/218/NA","TRAPPIST-1e",32,"FALSE",2543,1,55,0,0,"Mele Sha",NA,1,574,2599,"F","218",NA
+"0574_01","Mars","FALSE","F/218/P","TRAPPIST-1e",32,"FALSE",2543,1,55,0,0,"Mele Sha",NA,1,574,2599,"F","218","P"
 "0578_01","Earth","TRUE","G/84/S","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Dont Hoppers",NA,1,578,0,"G","84","S"
 "0578_02","Earth","FALSE","G/84/S","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Nance Hoppers",NA,2,578,0,"G","84","S"
 "0584_01","Earth","TRUE","G/88/P","TRAPPIST-1e",21,"FALSE",0,0,0,0,0,"Charry Hortis",NA,1,584,0,"G","88","P"
@@ -343,7 +343,7 @@
 "0731_01","Earth","FALSE","F/136/S","TRAPPIST-1e",19,"FALSE",720,0,7,0,32,"Raulia Cleang",NA,1,731,759,"F","136","S"
 "0731_02","Earth","FALSE","F/136/S","TRAPPIST-1e",29,"FALSE",60,480,5,0,276,"Jessa Cleang",NA,2,731,821,"F","136","S"
 "0735_01","Mars","FALSE","F/155/P","TRAPPIST-1e",25,"FALSE",266,98,748,169,6,"Healls Tie",NA,1,735,1287,"F","155","P"
-"0739_01","Earth","FALSE","F/218/NA","TRAPPIST-1e",41,"FALSE",0,885,0,0,0,"Willy Mcfarleys",NA,1,739,885,"F","218",NA
+"0739_01","Earth","FALSE","F/218/P","TRAPPIST-1e",41,"FALSE",0,885,0,0,0,"Willy Mcfarleys",NA,1,739,885,"F","218","P"
 "0741_01","Earth","FALSE","F/137/S","55 Cancri e",19,"FALSE",0,163,1487,1,223,"Lyny Tuckers",NA,1,741,1874,"F","137","S"
 "0742_01","Mars","FALSE","E/54/S","TRAPPIST-1e",33,"FALSE",4,153,892,0,0,"Sugark Min",NA,1,742,1049,"E","54","S"
 "0742_02","Mars","TRUE","F/138/S","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Frunk Min",NA,2,742,0,"F","138","S"
@@ -357,7 +357,7 @@
 "0752_01","Earth","TRUE","G/113/S","TRAPPIST-1e",23,"FALSE",0,0,0,0,0,"Annon Hultz",NA,1,752,0,"G","113","S"
 "0755_01","Europa","FALSE","D/32/P","55 Cancri e",31,"FALSE",0,1029,1247,0,52,"Sinons Irived",NA,1,755,2328,"D","32","P"
 "0758_01","Europa","FALSE","C/29/S","TRAPPIST-1e",22,"FALSE",3,2490,0,1197,144,"Penton Switmorary",NA,1,758,3834,"C","29","S"
-"0758_02","Europa","TRUE","B/97/NA","55 Cancri e",74,"FALSE",0,0,0,0,0,"Caia Switmorary",NA,2,758,0,"B","97",NA
+"0758_02","Europa","TRUE","B/97/S","55 Cancri e",74,"FALSE",0,0,0,0,0,"Caia Switmorary",NA,2,758,0,"B","97","S"
 "0758_03","Europa","FALSE","C/29/S","TRAPPIST-1e",53,"FALSE",472,3,0,1935,2505,"Batan Switmorary",NA,3,758,4915,"C","29","S"
 "0759_01","Europa","TRUE","C/25/P","55 Cancri e",40,"FALSE",0,0,0,0,0,"Hekarf Tabloory",NA,1,759,0,"C","25","P"
 "0759_02","Europa","FALSE","C/25/P","55 Cancri e",23,"FALSE",0,4733,0,1412,4419,"Grafik Tabloory",NA,2,759,10564,"C","25","P"
@@ -421,7 +421,7 @@
 "0880_02","Mars","TRUE","E/50/P","TRAPPIST-1e",45,"FALSE",0,0,0,0,0,"Want Pepie",NA,2,880,0,"E","50","P"
 "0882_01","Earth","FALSE","G/132/S","TRAPPIST-1e",23,"FALSE",299,4958,299,0,93,"Lyde Briggins",NA,1,882,5649,"G","132","S"
 "0884_01","Earth","FALSE","G/128/P","TRAPPIST-1e",59,"FALSE",0,0,0,7,833,"Ginia Rilley",NA,1,884,840,"G","128","P"
-"0884_02","Earth","FALSE","F/218/NA","TRAPPIST-1e",28,"FALSE",0,0,762,0,0,"Erine Rilley",NA,2,884,762,"F","218",NA
+"0884_02","Earth","FALSE","F/218/S","TRAPPIST-1e",28,"FALSE",0,0,762,0,0,"Erine Rilley",NA,2,884,762,"F","218","S"
 "0886_01","Mars","FALSE","F/182/P","TRAPPIST-1e",61,"FALSE",1399,0,693,0,0,"Torms Bota",NA,1,886,2092,"F","182","P"
 "0886_02","Mars","TRUE","F/182/P","TRAPPIST-1e",52,"FALSE",0,0,0,0,0,"Casps Bota",NA,2,886,0,"F","182","P"
 "0886_03","Mars","TRUE","F/182/P","TRAPPIST-1e",5,"FALSE",0,0,0,0,0,"Koks Bota",NA,3,886,0,"F","182","P"
@@ -543,7 +543,7 @@
 "1128_02","Europa","TRUE","B/41/P","TRAPPIST-1e",30,"FALSE",0,0,0,0,0,"Arion Wassid",NA,2,1128,0,"B","41","P"
 "1131_01","Europa","TRUE","B/44/S","55 Cancri e",75,"FALSE",0,0,0,0,0,"Mizark Comessic",NA,1,1131,0,"B","44","S"
 "1135_01","Europa","FALSE","B/45/S","TRAPPIST-1e",28,"FALSE",1371,1447,0,0,6151,"Strali Coarswing",NA,1,1135,8969,"B","45","S"
-"1135_02","Europa","FALSE","C/97/NA","55 Cancri e",61,"FALSE",26,3606,0,0,138,"Toperon Coarswing",NA,2,1135,3770,"C","97",NA
+"1135_02","Europa","FALSE","C/97/S","55 Cancri e",61,"FALSE",26,3606,0,0,138,"Toperon Coarswing",NA,2,1135,3770,"C","97","S"
 "1135_03","Europa","FALSE","B/45/S","TRAPPIST-1e",25,"FALSE",0,1039,12,4584,2158,"Polari Coarswing",NA,3,1135,7793,"B","45","S"
 "1135_04","Europa","FALSE","B/45/S","55 Cancri e",21,"FALSE",411,7312,14,22,215,"Sarthim Coarswing",NA,4,1135,7974,"B","45","S"
 "1137_01","Europa","FALSE","E/82/S","TRAPPIST-1e",33.0651416122004,"FALSE",0,1537,0,112,753,"Vindem Unings",NA,1,1137,2402,"E","82","S"
@@ -712,7 +712,7 @@
 "1470_01","Earth","TRUE","G/235/P","TRAPPIST-1e",20,"FALSE",0,0,0,0,0,"Julin Rasmussony",NA,1,1470,0,"G","235","P"
 "1471_01","Earth","FALSE","G/226/S","Other",6,"FALSE",0,0,0,0,0,"Reneen Morez",NA,1,1471,0,"G","226","S"
 "1471_02","Other","TRUE","G/226/S","TRAPPIST-1e",1,"FALSE",0,0,0,0,0,"Weney Morez",NA,2,1471,0,"G","226","S"
-"1471_03","Earth","FALSE","G/218/NA","TRAPPIST-1e",1,"FALSE",0,0,0,0,0,"Erina Bradamss",NA,3,1471,0,"G","218",NA
+"1471_03","Earth","FALSE","G/218/S","TRAPPIST-1e",1,"FALSE",0,0,0,0,0,"Erina Bradamss",NA,3,1471,0,"G","218","S"
 "1471_04","Earth","FALSE","G/226/S","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Kaye Bradamss",NA,4,1471,0,"G","226","S"
 "1471_05","Earth","TRUE","G/226/S","TRAPPIST-1e",8,"FALSE",0,0,0,0,0,"Kentha Morez",NA,5,1471,0,"G","226","S"
 "1472_01","Earth","TRUE","G/236/P","PSO J318.5-22",29,"FALSE",0,0,0,0,0,"Kimena Dillips",NA,1,1472,0,"G","236","P"
@@ -731,7 +731,7 @@
 "1492_01","Europa","FALSE","C/57/S","55 Cancri e",54,"FALSE",1,695,0,522,7382,"Zedasim Aneetle",NA,1,1492,8600,"C","57","S"
 "1492_02","Europa","FALSE","C/57/S","55 Cancri e",73,"FALSE",22,30,0,1616,103,"Algrafi Aneetle",NA,2,1492,1771,"C","57","S"
 "1494_01","Earth","FALSE","F/286/S","55 Cancri e",17,"FALSE",583,1,0,0,6,"Eilace Leblanchez",NA,1,1494,590,"F","286","S"
-"1495_01","Earth","FALSE","F/218/NA","TRAPPIST-1e",21,"FALSE",0,0,18,758,0,"Wenise Dukertyler",NA,1,1495,776,"F","218",NA
+"1495_01","Earth","FALSE","F/218/P","TRAPPIST-1e",21,"FALSE",0,0,18,758,0,"Wenise Dukertyler",NA,1,1495,776,"F","218","P"
 "1495_02","Earth","TRUE","G/241/P","55 Cancri e",60,"FALSE",0,0,0,0,0,"Elancy Dukertyler",NA,2,1495,0,"G","241","P"
 "1496_01","Earth","TRUE","G/242/P","TRAPPIST-1e",50,"FALSE",0,0,0,0,0,"Estine Scottney",NA,1,1496,0,"G","242","P"
 "1497_01","Mars","TRUE","F/294/P","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Chios Chmad",NA,1,1497,0,"F","294","P"
@@ -824,14 +824,14 @@
 "1689_01","Europa","TRUE","C/64/S","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Murzimp Asseple",NA,1,1689,0,"C","64","S"
 "1689_02","Europa","FALSE","C/64/S","TRAPPIST-1e",30,"FALSE",0,3085,13,212,297,"Markton Asseple",NA,2,1689,3607,"C","64","S"
 "1689_03","Europa","FALSE","C/64/S","TRAPPIST-1e",28,"FALSE",0,6285,0,1301,108,"Batenar Asseple",NA,3,1689,7694,"C","64","S"
-"1692_01","Earth","TRUE","G/218/NA","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Joyn Roberrenn",NA,1,1692,0,"G","218",NA
+"1692_01","Earth","TRUE","G/218/P","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Joyn Roberrenn",NA,1,1692,0,"G","218","P"
 "1693_01","Earth","FALSE","F/322/S","TRAPPIST-1e",20,"FALSE",2,673,0,0,41,"Daven Francock",NA,1,1693,716,"F","322","S"
 "1701_01","Earth","TRUE","G/275/P","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Coley Gilleranks",NA,1,1701,0,"G","275","P"
 "1702_01","Earth","FALSE","F/323/S","TRAPPIST-1e",14,"FALSE",0,1141,0,0,7,"Debora Ellahan",NA,1,1702,1148,"F","323","S"
 "1703_01","Earth","FALSE","F/337/P","TRAPPIST-1e",20,"FALSE",0,671,56,0,0,"Dian Byerton",NA,1,1703,727,"F","337","P"
 "1706_01","Other","FALSE","F/324/S","TRAPPIST-1e",45,"FALSE",0,92,202,271,362,"Ward Shieldson",NA,1,1706,927,"F","324","S"
 "1707_01","Earth","FALSE","F/325/S","55 Cancri e",19,"FALSE",0,0,0,394,327,"Isa Trerady",NA,1,1707,721,"F","325","S"
-"1716_01","Mars","FALSE","F/218/NA","TRAPPIST-1e",42,"FALSE",247,0,27,707,32,"Repart Spane",NA,1,1716,1013,"F","218",NA
+"1716_01","Mars","FALSE","F/218/P","TRAPPIST-1e",42,"FALSE",247,0,27,707,32,"Repart Spane",NA,1,1716,1013,"F","218","P"
 "1720_01","Earth","FALSE","F/340/P","TRAPPIST-1e",23,"FALSE",690,4,10,0,0,"Daisya Bushins",NA,1,1720,704,"F","340","P"
 "1722_01","Earth","FALSE","G/279/P","TRAPPIST-1e",43,"FALSE",0,22,0,6,879,"Delley Joynewtonks",NA,1,1722,907,"G","279","P"
 "1726_01","Mars","FALSE","F/329/S","TRAPPIST-1e",20,"FALSE",532,0,747,10,0,"Badont Chnie",NA,1,1726,1289,"F","329","S"
@@ -1019,7 +1019,7 @@
 "2108_01","Europa","FALSE","C/73/P","55 Cancri e",26,"FALSE",399,5722,0,39,3155,"Izarino Goortedant",NA,1,2108,9315,"C","73","P"
 "2108_02","Europa","FALSE","C/73/P","TRAPPIST-1e",42,"FALSE",0,1311,0,63,954,"Tabdhib Goortedant",NA,2,2108,2328,"C","73","P"
 "2109_01","Earth","TRUE","G/337/S","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Heila Hestes",NA,1,2109,0,"G","337","S"
-"2113_01","Earth","TRUE","G/218/NA","TRAPPIST-1e",15,"FALSE",0,0,0,0,0,"Julin Rothewson",NA,1,2113,0,"G","218",NA
+"2113_01","Earth","TRUE","G/218/P","TRAPPIST-1e",15,"FALSE",0,0,0,0,0,"Julin Rothewson",NA,1,2113,0,"G","218","P"
 "2119_01","Earth","FALSE","G/340/S","TRAPPIST-1e",35,"FALSE",344,530,0,1,9,"Etha Masquez",NA,1,2119,884,"G","340","S"
 "2119_02","Earth","TRUE","G/340/S","TRAPPIST-1e",35,"FALSE",0,0,0,0,0,"Fanna Masquez",NA,2,2119,0,"G","340","S"
 "2122_01","Earth","FALSE","E/154/S","PSO J318.5-22",24,"FALSE",0,618,0,0,0,"Mollen Wolfaddox",NA,1,2122,618,"E","154","S"
@@ -1029,7 +1029,7 @@
 "2151_01","Earth","TRUE","G/346/S","TRAPPIST-1e",39,"FALSE",0,0,0,0,0,"Brina Ballocks",NA,1,2151,0,"G","346","S"
 "2155_01","Earth","FALSE","F/427/P","TRAPPIST-1e",35,"FALSE",0,445,451,3,0,"Rice Ryanga",NA,1,2155,899,"F","427","P"
 "2157_01","Earth","FALSE","F/422/S","TRAPPIST-1e",26,"FALSE",0,0,0,0,872,"Min Daughessey",NA,1,2157,872,"F","422","S"
-"2160_01","Mars","FALSE","F/218/NA","TRAPPIST-1e",26,"FALSE",1775,0,28,0,796,"Meal Anate",NA,1,2160,2599,"F","218",NA
+"2160_01","Mars","FALSE","F/218/P","TRAPPIST-1e",26,"FALSE",1775,0,28,0,796,"Meal Anate",NA,1,2160,2599,"F","218","P"
 "2160_02","Mars","TRUE","F/428/P","55 Cancri e",0,"FALSE",0,0,0,0,0,"Alex Anate",NA,2,2160,0,"F","428","P"
 "2160_03","Mars","TRUE","F/428/P","TRAPPIST-1e",8,"FALSE",0,0,0,0,0,"Mark Anate",NA,3,2160,0,"F","428","P"
 "2165_01","Earth","FALSE","F/426/S","TRAPPIST-1e",44,"FALSE",0,74,0,0,0,"Clarry Casez",NA,1,2165,74,"F","426","S"
@@ -1045,7 +1045,7 @@
 "2185_01","Europa","TRUE","C/82/S","55 Cancri e",37,"FALSE",0,0,0,0,0,"Dirius Catimod",NA,1,2185,0,"C","82","S"
 "2192_01","Earth","FALSE","G/351/S","PSO J318.5-22",24,"FALSE",286,31,208,207,39,"Verly Estein",NA,1,2192,771,"G","351","S"
 "2197_01","Earth","FALSE","G/353/S","55 Cancri e",53,"FALSE",13,522,0,137,1,"Helean Hermanapp",NA,1,2197,673,"G","353","S"
-"2199_01","Earth","FALSE","F/218/NA","55 Cancri e",19,"FALSE",0,5,573,124,0,"Haryn Mandez",NA,1,2199,702,"F","218",NA
+"2199_01","Earth","FALSE","F/218/P","55 Cancri e",19,"FALSE",0,5,573,124,0,"Haryn Mandez",NA,1,2199,702,"F","218","P"
 "2208_01","Mars","FALSE","F/444/P","TRAPPIST-1e",24,"FALSE",693,0,727,0,2,"Volath Babre",NA,1,2208,1422,"F","444","P"
 "2213_01","Mars","FALSE","E/131/P","TRAPPIST-1e",31,"FALSE",1423,0,686,0,0,"Eloos Panad",NA,1,2213,2109,"E","131","P"
 "2214_01","Earth","FALSE","E/132/P","TRAPPIST-1e",27,"FALSE",0,674,0,951,0,"Therie Marson",NA,1,2214,1625,"E","132","P"
@@ -1097,7 +1097,7 @@
 "2326_01","Earth","TRUE","G/374/P","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Lolas Owery",NA,1,2326,0,"G","374","P"
 "2328_01","Earth","FALSE","F/471/P","TRAPPIST-1e",49,"FALSE",9,146,207,688,2,"Artis Farrowns",NA,1,2328,1052,"F","471","P"
 "2330_01","Earth","FALSE","F/473/P","PSO J318.5-22",21,"FALSE",17,0,0,595,0,"Jarena Weaverays",NA,1,2330,612,"F","473","P"
-"2331_01","Europa","TRUE","B/97/NA","55 Cancri e",29,"FALSE",0,0,0,0,0,"Batenan Fueling",NA,1,2331,0,"B","97",NA
+"2331_01","Europa","TRUE","B/97/P","55 Cancri e",29,"FALSE",0,0,0,0,0,"Batenan Fueling",NA,1,2331,0,"B","97","P"
 "2334_01","Earth","FALSE","G/375/S","Other",25,"FALSE",877,0,0,37,0,"Evane Holton",NA,1,2334,914,"G","375","S"
 "2335_01","Earth","TRUE","G/376/S","PSO J318.5-22",27,"FALSE",0,0,0,0,0,NA,NA,1,2335,0,"G","376","S"
 "2337_01","Earth","TRUE","G/375/P","PSO J318.5-22",14,"FALSE",0,0,0,0,0,"Kendre Pittler",NA,1,2337,0,"G","375","P"
@@ -1154,7 +1154,7 @@
 "2425_02","Earth","FALSE","G/396/P","PSO J318.5-22",28,"FALSE",0,0,1059,8,83,"Trice Tranklinay",NA,2,2425,1150,"G","396","P"
 "2425_03","Earth","FALSE","F/495/P","TRAPPIST-1e",30,"FALSE",0,1307,848,246,0,"Rickie Tranklinay",NA,3,2425,2401,"F","495","P"
 "2425_04","Earth","FALSE","G/396/P","55 Cancri e",9,"FALSE",0,0,0,0,0,"Elenna Tranklinay",NA,4,2425,0,"G","396","P"
-"2425_05","Earth","TRUE","G/218/NA","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Coley Tranklinay",NA,5,2425,0,"G","218",NA
+"2425_05","Earth","TRUE","G/218/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Coley Tranklinay",NA,5,2425,0,"G","218","S"
 "2425_06","Earth","TRUE","G/396/P","TRAPPIST-1e",4,"FALSE",0,0,0,0,0,"Lan Tranklinay",NA,6,2425,0,"G","396","P"
 "2428_01","Earth","FALSE","F/496/P","PSO J318.5-22",22,"FALSE",470,0,67,16,0,"Bonyam Hayertez",NA,1,2428,553,"F","496","P"
 "2430_01","Earth","TRUE","G/394/S","TRAPPIST-1e",32,"FALSE",0,0,0,0,0,"Darry Mcphernard",NA,1,2430,0,"G","394","S"
@@ -1176,7 +1176,7 @@
 "2469_02","Mars","FALSE","F/473/S","TRAPPIST-1e",19,"FALSE",278,0,311,560,0,"Ming Apple",NA,2,2469,1149,"F","473","S"
 "2473_01","Earth","FALSE","F/474/S","TRAPPIST-1e",25,"FALSE",0,0,3,867,0,"Willah Cleachrand",NA,1,2473,870,"F","474","S"
 "2481_01","Other","TRUE","G/400/S","55 Cancri e",22,"FALSE",0,0,0,0,0,"Amela Irwinson",NA,1,2481,0,"G","400","S"
-"2481_02","Earth","FALSE","F/642/NA","TRAPPIST-1e",23,"FALSE",460,182,40,40,65,"Hanna Irwinson",NA,2,2481,787,"F","642",NA
+"2481_02","Earth","FALSE","F/642/P","TRAPPIST-1e",23,"FALSE",460,182,40,40,65,"Hanna Irwinson",NA,2,2481,787,"F","642","P"
 "2482_01","Europa","FALSE","D/84/S","55 Cancri e",42,"FALSE",3,2477,0,1585,1765,"Minchib Nairconed",NA,1,2482,5830,"D","84","S"
 "2482_02","Europa","FALSE","D/84/S","55 Cancri e",40,"FALSE",33,3030,0,3588,377,"Lesat Nairconed",NA,2,2482,7028,"D","84","S"
 "2484_01","Mars","TRUE","F/478/S","TRAPPIST-1e",71,"FALSE",0,0,0,0,0,"Eres Clake",NA,1,2484,0,"F","478","S"
@@ -1195,7 +1195,7 @@
 "2504_01","Earth","FALSE","F/482/S","TRAPPIST-1e",35,"FALSE",127,629,59,86,0,"Nancis Hopez",NA,1,2504,901,"F","482","S"
 "2507_01","Earth","TRUE","G/405/P","TRAPPIST-1e",23,"FALSE",0,0,0,0,0,"Jordy Currisones",NA,1,2507,0,"G","405","P"
 "2511_01","Earth","FALSE","F/518/P","TRAPPIST-1e",36,"FALSE",59,59,850,0,2,"Jonaye Hickerson",NA,1,2511,970,"F","518","P"
-"2514_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",36,"FALSE",3,755,0,33,0,"Ianne Doughan",NA,1,2514,791,"F","642",NA
+"2514_01","Earth","FALSE","F/642/P","TRAPPIST-1e",36,"FALSE",3,755,0,33,0,"Ianne Doughan",NA,1,2514,791,"F","642","P"
 "2517_01","Mars","TRUE","F/484/S","TRAPPIST-1e",35,"FALSE",0,0,0,0,0,"Miten Nuthe",NA,1,2517,0,"F","484","S"
 "2525_01","Earth","FALSE","F/486/S","TRAPPIST-1e",15,"FALSE",756,3,43,30,45,"Lloyde Mayson",NA,1,2525,877,"F","486","S"
 "2529_01","Europa","FALSE","C/89/P","Other",39,"TRUE",381,1222,1104,121,2827,"Muontak Healist",NA,1,2529,5655,"C","89","P"
@@ -1203,7 +1203,7 @@
 "2536_01","Mars","TRUE","F/490/S","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Heres Paie",NA,1,2536,0,"F","490","S"
 "2538_01","Europa","TRUE","B/76/P","55 Cancri e",21,"FALSE",0,0,0,0,0,"Scelava Pistage",NA,1,2538,0,"B","76","P"
 "2538_02","Europa","TRUE","B/76/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Wimps Uncionted",NA,2,2538,0,"B","76","P"
-"2539_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",13,"FALSE",0,956,22,41,0,"Garry Goods",NA,1,2539,1019,"F","642",NA
+"2539_01","Earth","FALSE","F/642/P","TRAPPIST-1e",13,"FALSE",0,956,22,41,0,"Garry Goods",NA,1,2539,1019,"F","642","P"
 "2543_01","Earth","FALSE","F/521/P","TRAPPIST-1e",32,"FALSE",0,1010,0,0,0,"Geneen Mcleaney",NA,1,2543,1010,"F","521","P"
 "2554_01","Earth","FALSE","F/493/S","PSO J318.5-22",22,"FALSE",0,1185,3,0,0,"Gracy Wallerson",NA,1,2554,1188,"F","493","S"
 "2556_01","Mars","TRUE","F/524/P","55 Cancri e",40,"FALSE",0,0,0,0,0,"Mulk Flie",NA,1,2556,0,"F","524","P"
@@ -1242,7 +1242,7 @@
 "2630_02","Earth","TRUE","G/418/S","TRAPPIST-1e",9,"FALSE",0,0,0,0,0,"Willey Onell",NA,2,2630,0,"G","418","S"
 "2630_03","Earth","FALSE","G/418/S","TRAPPIST-1e",1,"FALSE",0,0,0,0,0,"Sha Onell",NA,3,2630,0,"G","418","S"
 "2632_01","Earth","FALSE","F/546/P","TRAPPIST-1e",27,"FALSE",0,196,7,0,1325,"Raceky Hoopez",NA,1,2632,1528,"F","546","P"
-"2637_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",20,"FALSE",0,0,0,631,350,"Jona Rothewson",NA,1,2637,981,"F","642",NA
+"2637_01","Earth","FALSE","F/642/P","TRAPPIST-1e",20,"FALSE",0,0,0,631,350,"Jona Rothewson",NA,1,2637,981,"F","642","P"
 "2637_02","Earth","TRUE","G/429/P","PSO J318.5-22",2,"FALSE",0,0,0,0,0,"Garyan Rothewson",NA,2,2637,0,"G","429","P"
 "2637_03","Earth","FALSE","G/429/P","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Naomie Rothewson",NA,3,2637,0,"G","429","P"
 "2639_01","Mars","TRUE","F/509/S","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Golos Ropie",NA,1,2639,0,"F","509","S"
@@ -1328,7 +1328,7 @@
 "2848_01","Europa","TRUE","A/34/S","TRAPPIST-1e",35,"FALSE",0,0,0,0,0,"Instab Unkcatted",NA,1,2848,0,"A","34","S"
 "2848_02","Europa","TRUE","A/34/S","TRAPPIST-1e",61,"FALSE",0,0,0,0,0,"Nekkark Unkcatted",NA,2,2848,0,"A","34","S"
 "2848_03","Europa","TRUE","A/34/S","55 Cancri e",26,"FALSE",0,0,0,0,0,"Thab Unkcatted",NA,3,2848,0,"A","34","S"
-"2849_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",19,"FALSE",0,0,0,0,1201,"Felice Dillips",NA,1,2849,1201,"F","642",NA
+"2849_01","Earth","FALSE","F/642/P","TRAPPIST-1e",19,"FALSE",0,0,0,0,1201,"Felice Dillips",NA,1,2849,1201,"F","642","P"
 "2850_01","Mars","FALSE","F/543/S","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Guakes Nuthe",NA,1,2850,0,"F","543","S"
 "2850_02","Mars","TRUE","F/543/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Gian Nuthe",NA,2,2850,0,"F","543","S"
 "2850_03","Mars","FALSE","E/192/S","TRAPPIST-1e",26,"FALSE",1208,90,1,0,0,"Shog Nuthe",NA,3,2850,1299,"E","192","S"
@@ -1475,7 +1475,7 @@
 "3155_01","Europa","TRUE","B/103/P","55 Cancri e",37,"FALSE",0,0,0,0,0,"Alraia Brathful",NA,1,3155,0,"B","103","P"
 "3155_02","Europa","FALSE","B/103/P","55 Cancri e",44,"FALSE",0,4701,4,1,1133,NA,NA,2,3155,5839,"B","103","P"
 "3156_01","Earth","FALSE","G/499/S","PSO J318.5-22",42,"FALSE",854,25,0,11,0,"Ambert Baxters",NA,1,3156,890,"G","499","S"
-"3157_01","Mars","FALSE","F/642/NA","TRAPPIST-1e",18,"FALSE",966,0,271,106,218,"Hoow Upead",NA,1,3157,1561,"F","642",NA
+"3157_01","Mars","FALSE","F/642/P","TRAPPIST-1e",18,"FALSE",966,0,271,106,218,"Hoow Upead",NA,1,3157,1561,"F","642","P"
 "3160_01","Mars","FALSE","F/655/P","TRAPPIST-1e",34,"FALSE",1768,0,0,0,0,"Stray Cako",NA,1,3160,1768,"F","655","P"
 "3165_01","Earth","FALSE","F/597/S","TRAPPIST-1e",15,"FALSE",193,84,0,592,6,"Almary Harley",NA,1,3165,875,"F","597","S"
 "3167_01","Earth","FALSE","G/517/P","TRAPPIST-1e",36,"FALSE",0,1,1001,0,16,"Wenny Schmondez",NA,1,3167,1018,"G","517","P"
@@ -1554,7 +1554,7 @@
 "3346_01","Earth","FALSE","F/632/S","TRAPPIST-1e",22,"FALSE",6,0,723,1923,15,"Lindy Beckeetter",NA,1,3346,2667,"F","632","S"
 "3347_01","Europa","FALSE","B/127/S","55 Cancri e",45,"FALSE",64,7980,0,1,1470,"Errairk Cracionfic",NA,1,3347,9515,"B","127","S"
 "3347_02","Europa","FALSE","B/127/S","55 Cancri e",58,"FALSE",0,2696,0,2882,1563,"Zedasim Cracionfic",NA,2,3347,7141,"B","127","S"
-"3351_01","Earth","TRUE","G/642/NA","55 Cancri e",13,"FALSE",0,0,0,0,0,"Maura Miranciash",NA,1,3351,0,"G","642",NA
+"3351_01","Earth","TRUE","G/642/P","55 Cancri e",13,"FALSE",0,0,0,0,0,"Maura Miranciash",NA,1,3351,0,"G","642","P"
 "3351_02","Earth","FALSE","F/634/S","55 Cancri e",36,"FALSE",0,0,685,11,8,"Allia Mcguirez",NA,2,3351,704,"F","634","S"
 "3354_01","Europa","FALSE","E/226/S","TRAPPIST-1e",35,"FALSE",0,842,9,2061,547,"Asellah Idercaling",NA,1,3354,3459,"E","226","S"
 "3355_01","Earth","TRUE","G/548/P","PSO J318.5-22",23,"FALSE",0,0,0,0,0,"Blanie Fuenterson",NA,1,3355,0,"G","548","P"
@@ -1563,7 +1563,7 @@
 "3362_01","Europa","FALSE","B/128/S","TRAPPIST-1e",43,"FALSE",0,20809,13,3745,2862,"Mardach Headmish",NA,1,3362,27429,"B","128","S"
 "3362_02","Europa","FALSE","B/128/S","TRAPPIST-1e",67,"TRUE",0,6564,4,3560,243,"Brafirk Headmish",NA,2,3362,10371,"B","128","S"
 "3366_01","Europa","TRUE","B/129/S","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Taurak Unaring",NA,1,3366,0,"B","129","S"
-"3367_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",28,"FALSE",0,818,51,0,0,NA,NA,1,3367,869,"F","642",NA
+"3367_01","Earth","FALSE","F/642/P","TRAPPIST-1e",28,"FALSE",0,818,51,0,0,NA,NA,1,3367,869,"F","642","P"
 "3368_01","Mars","TRUE","E/228/S","TRAPPIST-1e",18,"FALSE",0,0,0,0,0,"Poot Stité",NA,1,3368,0,"E","228","S"
 "3368_02","Mars","TRUE","E/228/S","55 Cancri e",35,"FALSE",0,0,0,0,0,"Jur Stité",NA,2,3368,0,"E","228","S"
 "3368_03","Mars","FALSE","E/228/S","TRAPPIST-1e",22,"TRUE",1166,3,130,0,0,"Goats Buko",NA,3,3368,1299,"E","228","S"
@@ -1587,7 +1587,7 @@
 "3407_01","Earth","FALSE","F/644/S","TRAPPIST-1e",24,"FALSE",330,47,356,0,0,"Byrona Weaverays",NA,1,3407,733,"F","644","S"
 "3407_02","Earth","FALSE","F/644/S","TRAPPIST-1e",77,"FALSE",0,0,64,712,0,"Doria Weaverays",NA,2,3407,776,"F","644","S"
 "3411_01","Mars","FALSE","E/232/S","TRAPPIST-1e",22,"FALSE",446,0,1630,0,0,"Herk Homin",NA,1,3411,2076,"E","232","S"
-"3411_02","Mars","FALSE","F/642/NA","TRAPPIST-1e",22,"FALSE",1127,0,2451,96,0,"Naish Harta",NA,2,3411,3674,"F","642",NA
+"3411_02","Mars","FALSE","F/642/P","TRAPPIST-1e",22,"FALSE",1127,0,2451,96,0,"Naish Harta",NA,2,3411,3674,"F","642","P"
 "3411_03","Mars","FALSE","F/645/S","TRAPPIST-1e",20,"FALSE",1481,0,2183,24,5,"Eggies Homin",NA,3,3411,3693,"F","645","S"
 "3411_04","Mars","FALSE","F/645/S","TRAPPIST-1e",47,"FALSE",1696,10,48,0,0,"Wal Sté",NA,4,3411,1754,"F","645","S"
 "3411_05","Mars","TRUE","F/645/S","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Douse Homin",NA,5,3411,0,"F","645","S"
@@ -1670,7 +1670,7 @@
 "3589_07","Earth","TRUE","G/587/P","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Verek Petton",NA,7,3589,0,"G","587","P"
 "3590_01","Earth","FALSE","E/213/P","TRAPPIST-1e",23,"FALSE",0,4,737,309,558,"Trick Potters",NA,1,3590,1608,"E","213","P"
 "3593_01","Europa","FALSE","C/117/P","TRAPPIST-1e",27,"FALSE",0,3354,23,220,877,"Alraid Manized",NA,1,3593,4474,"C","117","P"
-"3599_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",46,"FALSE",48,856,0,0,4,"Philda Newtontoss",NA,1,3599,908,"F","642",NA
+"3599_01","Earth","FALSE","F/642/P","TRAPPIST-1e",46,"FALSE",48,856,0,0,4,"Philda Newtontoss",NA,1,3599,908,"F","642","P"
 "3601_01","Earth","FALSE","G/591/P","TRAPPIST-1e",34,"FALSE",270,0,56,549,13,"Feline Hopperett",NA,1,3601,888,"G","591","P"
 "3601_02","Earth","FALSE","G/591/P","55 Cancri e",2,"FALSE",0,0,0,0,0,"Andary Hinglendez",NA,2,3601,0,"G","591","P"
 "3601_03","Earth","TRUE","G/591/P","TRAPPIST-1e",11,"FALSE",0,0,0,0,0,"Ritany Hopperett",NA,3,3601,0,"G","591","P"
@@ -1744,7 +1744,7 @@
 "3701_02","Europa","FALSE","D/125/P","55 Cancri e",35,"FALSE",2439,5172,0,43,17,"Arino Horbox",NA,2,3701,7671,"D","125","P"
 "3701_03","Europa","TRUE","D/125/P","TRAPPIST-1e",48,"FALSE",0,0,0,0,0,"Hekaton Horbox",NA,3,3701,0,"D","125","P"
 "3709_01","Earth","TRUE","G/605/S","55 Cancri e",33,"FALSE",0,0,0,0,0,"Timmy Wagnerray",NA,1,3709,0,"G","605","S"
-"3712_01","Earth","TRUE","G/642/NA","55 Cancri e",0,"FALSE",0,0,0,0,0,"Diandi Blacks",NA,1,3712,0,"G","642",NA
+"3712_01","Earth","TRUE","G/642/P","55 Cancri e",0,"FALSE",0,0,0,0,0,"Diandi Blacks",NA,1,3712,0,"G","642","P"
 "3712_02","Earth","TRUE","G/606/S","55 Cancri e",11,"FALSE",0,0,0,0,0,"Geneen Blacks",NA,2,3712,0,"G","606","S"
 "3712_03","Earth","TRUE","G/606/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Candra Blacks",NA,3,3712,0,"G","606","S"
 "3712_04","Earth","FALSE","F/701/S","TRAPPIST-1e",14,"FALSE",0,853,0,11,0,"Kayne Blacks",NA,4,3712,864,"F","701","S"
@@ -1760,7 +1760,7 @@
 "3723_01","Earth","FALSE","F/771/P","TRAPPIST-1e",19,"FALSE",7,568,17,54,1,"Dord Potters",NA,1,3723,647,"F","771","P"
 "3725_01","Earth","TRUE","G/610/S","PSO J318.5-22",18,"FALSE",0,0,0,0,0,"Candyn Richan",NA,1,3725,0,"G","610","S"
 "3727_01","Earth","FALSE","G/611/S","PSO J318.5-22",23,"FALSE",0,0,0,37,463,"Terta Braymon",NA,1,3727,500,"G","611","S"
-"3730_01","Mars","TRUE","F/642/NA","TRAPPIST-1e",53,"FALSE",0,0,0,0,0,"Gonut Purle",NA,1,3730,0,"F","642",NA
+"3730_01","Mars","TRUE","F/642/P","TRAPPIST-1e",53,"FALSE",0,0,0,0,0,"Gonut Purle",NA,1,3730,0,"F","642","P"
 "3731_01","Earth","TRUE","G/613/S","PSO J318.5-22",13,"FALSE",0,0,0,0,0,"Moniey Bryangton",NA,1,3731,0,"G","613","S"
 "3738_01","Earth","FALSE","F/773/P","TRAPPIST-1e",20,"FALSE",0,1476,2,0,2,"Kris Farrowns",NA,1,3738,1480,"F","773","P"
 "3740_01","Earth","FALSE","F/706/S","TRAPPIST-1e",34,"FALSE",529,22,1,0,251,"Danie Vandez",NA,1,3740,803,"F","706","S"
@@ -1858,7 +1858,7 @@
 "3951_01","Earth","FALSE","F/815/P","TRAPPIST-1e",19,"FALSE",3,52,0,12,649,"Tricky Richan",NA,1,3951,716,"F","815","P"
 "3953_01","Earth","TRUE","G/645/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Sandie Clinantones",NA,1,3953,0,"G","645","P"
 "3956_01","Earth","FALSE","F/816/P","TRAPPIST-1e",23,"FALSE",174,467,3,0,0,"Gerek Evedorsen",NA,1,3956,644,"F","816","P"
-"3957_01","Earth","TRUE","G/642/NA","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Iria Tersimpson",NA,1,3957,0,"G","642",NA
+"3957_01","Earth","TRUE","G/642/P","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Iria Tersimpson",NA,1,3957,0,"G","642","P"
 "3965_01","Earth","FALSE","G/651/S","TRAPPIST-1e",20,"FALSE",610,0,249,0,0,"Anny Cohendright",NA,1,3965,859,"G","651","S"
 "3969_01","Earth","FALSE","F/750/S","TRAPPIST-1e",26,"FALSE",0,0,0,745,0,"Jaimer Potters",NA,1,3969,745,"F","750","S"
 "3972_01","Europa","TRUE","D/133/P","55 Cancri e",26,"FALSE",0,0,0,0,0,"Acrabik Coarswing",NA,1,3972,0,"D","133","P"
@@ -1915,7 +1915,7 @@
 "4092_01","Earth","TRUE","G/670/P","PSO J318.5-22",31,"FALSE",0,0,0,0,0,"Janne Blancoy",NA,1,4092,0,"G","670","P"
 "4094_01","Europa","FALSE","B/157/S","TRAPPIST-1e",20,"FALSE",0,86,71,4695,16,"Enibah Bussive",NA,1,4094,4868,"B","157","S"
 "4094_02","Europa","FALSE","B/157/S","55 Cancri e",44,"FALSE",1247,583,0,7068,132,"Bellus Bussive",NA,2,4094,9030,"B","157","S"
-"4100_01","Europa","FALSE","C/97/NA","55 Cancri e",25,"FALSE",3,6315,103,90,0,"Weidus Wincer",NA,1,4100,6511,"C","97",NA
+"4100_01","Europa","FALSE","C/97/P","55 Cancri e",25,"FALSE",3,6315,103,90,0,"Weidus Wincer",NA,1,4100,6511,"C","97","P"
 "4105_01","Earth","FALSE","E/254/P","TRAPPIST-1e",25,"FALSE",0,0,759,5,24,"Roydo Solon",NA,1,4105,788,"E","254","P"
 "4111_01","Earth","TRUE","G/677/S","55 Cancri e",20,"FALSE",0,0,0,0,0,"Coryl Simpsonks",NA,1,4111,0,"G","677","S"
 "4117_01","Mars","FALSE","F/844/P","TRAPPIST-1e",33,"FALSE",634,0,611,44,0,"Boon Hac",NA,1,4117,1289,"F","844","P"
@@ -2023,12 +2023,12 @@
 "4355_01","Earth","TRUE","G/719/P","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Carold Maystuarey",NA,1,4355,0,"G","719","P"
 "4363_01","Earth","FALSE","F/897/P","TRAPPIST-1e",28,"FALSE",0,802,146,1,0,"Yolace Bellyonsley",NA,1,4363,949,"F","897","P"
 "4374_01","Earth","FALSE","G/721/P","TRAPPIST-1e",22,"FALSE",3,53,4,0,748,"Everly Irwinson",NA,1,4374,808,"G","721","P"
-"4375_01","Europa","TRUE","B/97/NA","PSO J318.5-22",39,"FALSE",0,0,0,0,0,"Sadirk Crioncery",NA,1,4375,0,"B","97",NA
+"4375_01","Europa","TRUE","B/97/P","PSO J318.5-22",39,"FALSE",0,0,0,0,0,"Sadirk Crioncery",NA,1,4375,0,"B","97","P"
 "4377_01","Earth","TRUE","G/711/S","TRAPPIST-1e",29,"FALSE",0,0,0,0,0,"Hanna Colomonson",NA,1,4377,0,"G","711","S"
 "4377_02","Earth","FALSE","F/823/S","PSO J318.5-22",42,"FALSE",48,466,3,28,125,"Essara Colomonson",NA,2,4377,670,"F","823","S"
 "4377_03","Earth","TRUE","G/711/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Penne Colomonson",NA,3,4377,0,"G","711","S"
 "4378_01","Europa","FALSE","C/139/P","TRAPPIST-1e",52,"FALSE",0,465,0,1312,3521,"Alhaula Glogry",NA,1,4378,5298,"C","139","P"
-"4378_02","Europa","FALSE","C/97/NA","55 Cancri e",26,"TRUE",0,7596,0,5928,681,"Kraban Glogry",NA,2,4378,14205,"C","97",NA
+"4378_02","Europa","FALSE","C/97/S","55 Cancri e",26,"TRUE",0,7596,0,5928,681,"Kraban Glogry",NA,2,4378,14205,"C","97","S"
 "4379_01","Earth","TRUE","G/712/S","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Sonnie Blange",NA,1,4379,0,"G","712","S"
 "4380_01","Earth","FALSE","F/824/S","TRAPPIST-1e",23,"FALSE",0,0,0,3,1390,"Robyny Thorney",NA,1,4380,1393,"F","824","S"
 "4381_01","Earth","FALSE","F/825/S","TRAPPIST-1e",36,"FALSE",0,1084,0,66,0,"Helley Kellynn",NA,1,4381,1150,"F","825","S"
@@ -2037,7 +2037,7 @@
 "4385_01","Earth","FALSE","G/713/S","TRAPPIST-1e",28,"FALSE",0,0,606,122,39,"Stenny Tranklinay",NA,1,4385,767,"G","713","S"
 "4385_02","Earth","TRUE","G/713/S","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Healle Tranklinay",NA,2,4385,0,"G","713","S"
 "4385_03","Earth","FALSE","G/713/S","55 Cancri e",0,"FALSE",0,0,0,0,0,"Gerek Tranklinay",NA,3,4385,0,"G","713","S"
-"4389_01","Earth","FALSE","F/642/NA","TRAPPIST-1e",24,"FALSE",0,0,59,744,0,"Geneen Ayalazquez",NA,1,4389,803,"F","642",NA
+"4389_01","Earth","FALSE","F/642/P","TRAPPIST-1e",24,"FALSE",0,0,59,744,0,"Geneen Ayalazquez",NA,1,4389,803,"F","642","P"
 "4394_01","Earth","FALSE","F/828/S","TRAPPIST-1e",49,"FALSE",1128,0,0,0,0,"Beathy Dillips",NA,1,4394,1128,"F","828","S"
 "4398_01","Earth","FALSE","F/829/S","PSO J318.5-22",21,"FALSE",0,7,0,652,9,"Dessie Hayerson",NA,1,4398,668,"F","829","S"
 "4406_01","Earth","FALSE","G/718/S","TRAPPIST-1e",29,"FALSE",22,41,3,24,357,"Glenry Loverceson",NA,1,4406,447,"G","718","S"
@@ -2135,7 +2135,7 @@
 "4626_02","Europa","FALSE","C/174/S","Other",27,"FALSE",1218,236,0,1678,0,"Alaron Sofraten",NA,2,4626,3132,"C","174","S"
 "4627_01","Other","FALSE","G/758/S","TRAPPIST-1e",18,"FALSE",0,0,12,0,1421,"Dorey Mcinton",NA,1,4627,1433,"G","758","S"
 "4629_01","Earth","FALSE","F/869/S","TRAPPIST-1e",63,"FALSE",0,0,421,341,2,"Almary Jacobbinson",NA,1,4629,764,"F","869","S"
-"4636_01","Earth","TRUE","G/642/NA","PSO J318.5-22",2,"FALSE",0,0,0,0,0,"Elenna Lowelliott",NA,1,4636,0,"G","642",NA
+"4636_01","Earth","TRUE","G/642/P","PSO J318.5-22",2,"FALSE",0,0,0,0,0,"Elenna Lowelliott",NA,1,4636,0,"G","642","P"
 "4639_01","Europa","FALSE","C/177/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Meropus Exnutchor",NA,1,4639,0,"C","177","S"
 "4639_02","Europa","FALSE","C/177/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Mizarf Exnutchor",NA,2,4639,0,"C","177","S"
 "4639_03","Europa","FALSE","C/177/S","55 Cancri e",37,"FALSE",3675,0,0,5482,1535,"Arkard Blercat",NA,3,4639,10692,"C","177","S"
@@ -2220,7 +2220,7 @@
 "4800_01","Earth","FALSE","G/784/S","TRAPPIST-1e",45,"FALSE",0,0,61,199,514,"Verney Newtontoss",NA,1,4800,774,"G","784","S"
 "4802_01","Earth","TRUE","G/774/P","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Mabley Lambucketty",NA,1,4802,0,"G","774","P"
 "4802_02","Earth","FALSE","G/774/P","PSO J318.5-22",74,"FALSE",568,17,0,0,1,"Evendy Lambucketty",NA,2,4802,586,"G","774","P"
-"4805_01","Earth","TRUE","G/1056/NA","55 Cancri e",24,"FALSE",0,0,0,0,0,"Wallyn Popelase",NA,1,4805,0,"G","1056",NA
+"4805_01","Earth","TRUE","G/1056/P","55 Cancri e",24,"FALSE",0,0,0,0,0,"Wallyn Popelase",NA,1,4805,0,"G","1056","P"
 "4806_01","Mars","FALSE","E/312/S","TRAPPIST-1e",39,"FALSE",1,0,1048,0,0,"Coves Jaf",NA,1,4806,1049,"E","312","S"
 "4809_01","Earth","FALSE","F/978/P","TRAPPIST-1e",18,"FALSE",4,13,0,1784,137,"Evenna Barks",NA,1,4809,1938,"F","978","P"
 "4811_01","Earth","TRUE","G/787/S","PSO J318.5-22",39,"FALSE",0,0,0,0,0,"Colly Hickett",NA,1,4811,0,"G","787","S"
@@ -2251,7 +2251,7 @@
 "4861_01","Earth","FALSE","E/303/P","TRAPPIST-1e",58,"FALSE",70,0,292,356,0,"Carlen Frandriquez",NA,1,4861,718,"E","303","P"
 "4865_01","Earth","FALSE","F/988/P","TRAPPIST-1e",14,"FALSE",1538,22,0,11,2,"Idacey Sancasey",NA,1,4865,1573,"F","988","P"
 "4867_01","Earth","FALSE","F/989/P","TRAPPIST-1e",18,"FALSE",0,8,0,433,482,"Eilan Kerrealds",NA,1,4867,923,"F","989","P"
-"4869_01","Earth","FALSE","F/1056/NA","TRAPPIST-1e",40,"FALSE",48,4,351,54,443,"Tine Merce",NA,1,4869,900,"F","1056",NA
+"4869_01","Earth","FALSE","F/1056/P","TRAPPIST-1e",40,"FALSE",48,4,351,54,443,"Tine Merce",NA,1,4869,900,"F","1056","P"
 "4872_01","Earth","FALSE","F/924/S","TRAPPIST-1e",24,"FALSE",0,5,6,486,205,"Joyces Tuckers",NA,1,4872,702,"F","924","S"
 "4877_01","Mars","FALSE","F/928/S","TRAPPIST-1e",26,"FALSE",80,0,199,288,0,"Range Frie",NA,1,4877,567,"F","928","S"
 "4894_01","Earth","TRUE","G/798/S","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Laude Guerson",NA,1,4894,0,"G","798","S"
@@ -2274,7 +2274,7 @@
 "4948_01","Mars","FALSE","D/153/S","TRAPPIST-1e",25,"FALSE",1117,0,33,1238,0,"Nutz Mepie",NA,1,4948,2388,"D","153","S"
 "4949_01","Europa","TRUE","C/154/P","TRAPPIST-1e",32,"TRUE",0,0,0,0,0,"Astrark Amincrerus",NA,1,4949,0,"C","154","P"
 "4949_02","Europa","FALSE","C/154/P","55 Cancri e",25,"FALSE",0,1255,0,5229,3152,"Kumak Amincrerus",NA,2,4949,9636,"C","154","P"
-"4953_01","Europa","TRUE","B/292/NA","TRAPPIST-1e",49,"FALSE",0,0,0,0,0,"Solam Slable",NA,1,4953,0,"B","292",NA
+"4953_01","Europa","TRUE","B/292/P","TRAPPIST-1e",49,"FALSE",0,0,0,0,0,"Solam Slable",NA,1,4953,0,"B","292","P"
 "4955_01","Mars","FALSE","F/1011/P","TRAPPIST-1e",28,"FALSE",1104,0,163,19,61,"Cin Erry",NA,1,4955,1347,"F","1011","P"
 "4957_01","Europa","TRUE","C/155/P","55 Cancri e",58,"FALSE",0,0,0,0,0,"Antino Ofoormy",NA,1,4957,0,"C","155","P"
 "4959_01","Mars","TRUE","F/940/S","TRAPPIST-1e",27.4868035190616,"FALSE",0,0,0,0,0,"Donch Flate",NA,1,4959,0,"F","940","S"
@@ -2287,7 +2287,7 @@
 "4969_01","Earth","FALSE","F/1014/P","55 Cancri e",15,"FALSE",78,515,132,0,137,"Jeanie Bellarkerd",NA,1,4969,862,"F","1014","P"
 "4969_02","Earth","FALSE","G/802/P","PSO J318.5-22",29,"FALSE",9,0,663,0,0,"Chelsa Bellarkerd",NA,2,4969,672,"G","802","P"
 "4971_01","Earth","TRUE","G/812/S","PSO J318.5-22",18,"FALSE",0,0,0,0,0,"Lillen Contrevins",NA,1,4971,0,"G","812","S"
-"4976_01","Earth","FALSE","F/1056/NA","PSO J318.5-22",28,"FALSE",213,0,1317,199,0,"Arl Hickerson",NA,1,4976,1729,"F","1056",NA
+"4976_01","Earth","FALSE","F/1056/P","PSO J318.5-22",28,"FALSE",213,0,1317,199,0,"Arl Hickerson",NA,1,4976,1729,"F","1056","P"
 "4982_01","Earth","TRUE","G/815/S","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Wenise Armstromez",NA,1,4982,0,"G","815","S"
 "4984_01","Earth","FALSE","F/947/S","TRAPPIST-1e",18,"FALSE",0,130,0,429,0,"Chadie Baldson",NA,1,4984,559,"F","947","S"
 "4984_02","Other","FALSE","F/947/S","PSO J318.5-22",21,"FALSE",690,0,0,49,7,"Annard Baldson",NA,2,4984,746,"F","947","S"
@@ -2299,7 +2299,7 @@
 "5001_01","Earth","FALSE","G/819/S","TRAPPIST-1e",11,"FALSE",0,0,0,0,0,"Racyle Workmanson",NA,1,5001,0,"G","819","S"
 "5002_01","Earth","TRUE","G/820/S","55 Cancri e",26,"FALSE",0,0,0,0,0,"Racy Casentry",NA,1,5002,0,"G","820","S"
 "5011_01","Earth","TRUE","G/810/P","55 Cancri e",17,"FALSE",0,0,0,0,0,"Jimen Beangley",NA,1,5011,0,"G","810","P"
-"5022_01","Earth","FALSE","F/1056/NA","TRAPPIST-1e",26,"FALSE",0,115,307,420,0,"Landa Mcgowaymond",NA,1,5022,842,"F","1056",NA
+"5022_01","Earth","FALSE","F/1056/P","TRAPPIST-1e",26,"FALSE",0,115,307,420,0,"Landa Mcgowaymond",NA,1,5022,842,"F","1056","P"
 "5024_01","Earth","FALSE","G/822/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Evendy Mckins",NA,1,5024,0,"G","822","S"
 "5024_02","Earth","FALSE","G/822/S","TRAPPIST-1e",8.61464968152866,"FALSE",0,0,0,0,0,"Hene Mallerez",NA,2,5024,0,"G","822","S"
 "5024_03","Earth","FALSE","G/822/S","TRAPPIST-1e",4,"FALSE",0,0,0,0,0,"Agnesa Mckins",NA,3,5024,0,"G","822","S"
@@ -2314,7 +2314,7 @@
 "5033_01","Europa","FALSE","B/169/P","TRAPPIST-1e",32,"FALSE",0,5209,0,22,3062,"Majoth Witalnerod",NA,1,5033,8293,"B","169","P"
 "5033_02","Europa","FALSE","B/169/P","TRAPPIST-1e",40,"FALSE",0,1262,0,6162,6,"Wasalm Witalnerod",NA,2,5033,7430,"B","169","P"
 "5037_01","Mars","FALSE","E/323/S","TRAPPIST-1e",13,"FALSE",0,0,0,0,0,"Sar Birte",NA,1,5037,0,"E","323","S"
-"5038_01","Mars","FALSE","F/1056/NA","55 Cancri e",29,"FALSE",465,0,169,102,2104,"Bers Sun",NA,1,5038,2840,"F","1056",NA
+"5038_01","Mars","FALSE","F/1056/P","55 Cancri e",29,"FALSE",465,0,169,102,2104,"Bers Sun",NA,1,5038,2840,"F","1056","P"
 "5038_02","Mars","TRUE","F/1025/P","TRAPPIST-1e",11,"FALSE",0,0,0,0,0,"Cocors Sun",NA,2,5038,0,"F","1025","P"
 "5041_01","Earth","FALSE","F/959/S","55 Cancri e",25,"FALSE",3,414,4,245,143,"Glasey Cooperkins",NA,1,5041,809,"F","959","S"
 "5043_01","Mars","TRUE","F/1027/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Gice Lette",NA,1,5043,0,"F","1027","P"
@@ -2331,7 +2331,7 @@
 "5056_02","Mars","FALSE","F/1029/P","55 Cancri e",32,"FALSE",38,0,1423,0,0,"Ockies Chen",NA,2,5056,1461,"F","1029","P"
 "5066_01","Earth","FALSE","F/1031/P","TRAPPIST-1e",15,"FALSE",0,43,2837,6,140,"Millie Kinson",NA,1,5066,3026,"F","1031","P"
 "5071_01","Earth","FALSE","F/1032/P","TRAPPIST-1e",41,"FALSE",0,1478,0,0,3,"Stance Keithunts",NA,1,5071,1481,"F","1032","P"
-"5075_01","Earth","FALSE","F/1056/NA","TRAPPIST-1e",19,"FALSE",0,5,716,0,0,"Line Yatters",NA,1,5075,721,"F","1056",NA
+"5075_01","Earth","FALSE","F/1056/P","TRAPPIST-1e",19,"FALSE",0,5,716,0,0,"Line Yatters",NA,1,5075,721,"F","1056","P"
 "5077_01","Mars","FALSE","F/1034/P","TRAPPIST-1e",26,"FALSE",830,33,1030,3,29,"Beris Tirt",NA,1,5077,1925,"F","1034","P"
 "5078_01","Earth","FALSE","G/819/P","PSO J318.5-22",29.877177508269,"FALSE",1627,0,0,110,0,"Ferry Coffmaney",NA,1,5078,1737,"G","819","P"
 "5079_01","Mars","TRUE","F/968/S","TRAPPIST-1e",20,"FALSE",0,0,0,0,0,"Froops Dal",NA,1,5079,0,"F","968","S"
@@ -2345,7 +2345,7 @@
 "5096_01","Mars","FALSE","F/975/S","TRAPPIST-1e",54,"FALSE",1108,0,53,496,0,"Chrey Colte",NA,1,5096,1657,"F","975","S"
 "5096_02","Mars","FALSE","E/328/S","TRAPPIST-1e",21,"FALSE",542,0,1222,98,484,"Harz Colte",NA,2,5096,2346,"E","328","S"
 "5098_01","Earth","FALSE","F/976/S","TRAPPIST-1e",44,"FALSE",0,83,0,68,586,"Mistie Kellyons",NA,1,5098,737,"F","976","S"
-"5098_02","Earth","TRUE","G/1056/NA","PSO J318.5-22",11,"FALSE",0,0,0,0,0,"Sonald Kellyons",NA,2,5098,0,"G","1056",NA
+"5098_02","Earth","TRUE","G/1056/P","PSO J318.5-22",11,"FALSE",0,0,0,0,0,"Sonald Kellyons",NA,2,5098,0,"G","1056","P"
 "5098_03","Earth","TRUE","G/832/S","55 Cancri e",2,"FALSE",0,0,0,0,0,"Delody Kellyons",NA,3,5098,0,"G","832","S"
 "5099_01","Earth","FALSE","F/1040/P","TRAPPIST-1e",20,"FALSE",1330,0,0,0,49,"Brie Alldson",NA,1,5099,1379,"F","1040","P"
 "5100_01","Mars","TRUE","F/977/S","TRAPPIST-1e",50,"FALSE",0,0,0,0,0,"Gone Cle",NA,1,5100,0,"F","977","S"
@@ -2376,7 +2376,7 @@
 "5159_01","Europa","FALSE","B/174/P","55 Cancri e",29,"TRUE",47,2914,0,0,259,"Zedasim Rupeet",NA,1,5159,3220,"B","174","P"
 "5159_02","Europa","FALSE","B/174/P","55 Cancri e",31,"FALSE",0,837,0,1,4102,"Okulas Rupeet",NA,2,5159,4940,"B","174","P"
 "5164_01","Europa","TRUE","C/201/S","55 Cancri e",27,"FALSE",0,0,0,0,0,"Menchah Reeddommy",NA,1,5164,0,"C","201","S"
-"5164_02","Europa","TRUE","B/292/NA","TRAPPIST-1e",43,"FALSE",0,0,0,0,0,"Shamak Reeddommy",NA,2,5164,0,"B","292",NA
+"5164_02","Europa","TRUE","B/292/S","TRAPPIST-1e",43,"FALSE",0,0,0,0,0,"Shamak Reeddommy",NA,2,5164,0,"B","292","S"
 "5168_01","Earth","FALSE","F/1055/P","TRAPPIST-1e",29.877177508269,"FALSE",0,0,27,1358,0,"Tany Carverson",NA,1,5168,1385,"F","1055","P"
 "5169_01","Mars","FALSE","D/164/P","55 Cancri e",32,"FALSE",679,138,4,359,0,"Fes Buthe",NA,1,5169,1180,"D","164","P"
 "5172_01","Earth","FALSE","G/833/P","TRAPPIST-1e",19,"FALSE",0,180,712,0,886,"Armen Fielsenders",NA,1,5172,1778,"G","833","P"
@@ -2409,7 +2409,7 @@
 "5267_01","Earth","FALSE","G/851/P","TRAPPIST-1e",3,"FALSE",0,0,0,0,0,"Stance Monsoney",NA,1,5267,0,"G","851","P"
 "5267_02","Earth","TRUE","G/851/P","TRAPPIST-1e",18,"FALSE",0,0,0,0,0,"Lerome Monsoney",NA,2,5267,0,"G","851","P"
 "5267_03","Earth","FALSE","F/1074/P","TRAPPIST-1e",20,"FALSE",62,272,1613,88,41,"Gerly Monsoney",NA,3,5267,2076,"F","1074","P"
-"5270_01","Earth","TRUE","G/1056/NA","PSO J318.5-22",32,"FALSE",0,0,0,0,0,"Arl Hickson",NA,1,5270,0,"G","1056",NA
+"5270_01","Earth","TRUE","G/1056/P","PSO J318.5-22",32,"FALSE",0,0,0,0,0,"Arl Hickson",NA,1,5270,0,"G","1056","P"
 "5283_01","Earth","FALSE","G/853/P","PSO J318.5-22",59,"FALSE",0,179,225,6,304,"Deany Alshipson",NA,1,5283,714,"G","853","P"
 "5284_01","Europa","TRUE","E/328/P","TRAPPIST-1e",52,"FALSE",0,0,0,0,0,"Batares Siveduced",NA,1,5284,0,"E","328","P"
 "5285_01","Europa","TRUE","C/164/P","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Dyonif Motive",NA,1,5285,0,"C","164","P"
@@ -2440,7 +2440,7 @@
 "5329_02","Earth","TRUE","G/861/P","PSO J318.5-22",1,"FALSE",0,0,0,0,0,"Jamela Mclardson",NA,2,5329,0,"G","861","P"
 "5329_03","Earth","FALSE","G/861/P","TRAPPIST-1e",12,"FALSE",0,0,0,0,0,"Joandy Mclardson",NA,3,5329,0,"G","861","P"
 "5329_04","Earth","FALSE","G/861/P","TRAPPIST-1e",8,"FALSE",0,0,0,0,0,NA,NA,4,5329,0,"G","861","P"
-"5329_05","Earth","FALSE","F/1056/NA","PSO J318.5-22",45,"FALSE",0,311,115,4,328,"Delley Mclardson",NA,5,5329,758,"F","1056",NA
+"5329_05","Earth","FALSE","F/1056/P","PSO J318.5-22",45,"FALSE",0,311,115,4,328,"Delley Mclardson",NA,5,5329,758,"F","1056","P"
 "5329_06","Earth","FALSE","G/861/P","TRAPPIST-1e",10,"FALSE",0,0,0,0,0,"Sandie Mclardson",NA,6,5329,0,"G","861","P"
 "5329_07","Earth","FALSE","G/861/P","TRAPPIST-1e",3,"FALSE",0,0,0,0,0,"Kariel Mclardson",NA,7,5329,0,"G","861","P"
 "5332_01","Earth","FALSE","F/1096/P","TRAPPIST-1e",37,"FALSE",24,1361,0,0,0,"Dennya Harmontry",NA,1,5332,1385,"F","1096","P"
@@ -2482,7 +2482,7 @@
 "5393_01","Earth","FALSE","F/1108/P","TRAPPIST-1e",23,"FALSE",744,0,0,16,193,"Sanda Blainson",NA,1,5393,953,"F","1108","P"
 "5398_01","Mars","TRUE","F/1110/P","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Boats Soun",NA,1,5398,0,"F","1110","P"
 "5399_01","Earth","FALSE","F/1033/S","TRAPPIST-1e",20,"FALSE",0,50,50,1179,3,"Gailya Burnerez",NA,1,5399,1282,"F","1033","S"
-"5400_01","Earth","TRUE","G/1056/NA","TRAPPIST-1e",32,"FALSE",0,0,0,0,0,"Rancy Blancoy",NA,1,5400,0,"G","1056",NA
+"5400_01","Earth","TRUE","G/1056/P","TRAPPIST-1e",32,"FALSE",0,0,0,0,0,"Rancy Blancoy",NA,1,5400,0,"G","1056","P"
 "5403_01","Other","FALSE","E/345/S","TRAPPIST-1e",22,"FALSE",0,0,1,1,785,"Rayle Bradlerson",NA,1,5403,787,"E","345","S"
 "5405_01","Earth","FALSE","E/339/P","TRAPPIST-1e",13,"FALSE",94,0,0,889,0,"Gerry Bardsey",NA,1,5405,983,"E","339","P"
 "5407_01","Mars","FALSE","E/346/S","TRAPPIST-1e",42,"FALSE",0,0,0,0,0,"Weaffs Datty",NA,1,5407,0,"E","346","S"
@@ -2491,7 +2491,7 @@
 "5419_01","Earth","FALSE","F/1115/P","PSO J318.5-22",45,"FALSE",153,111,16,10,488,"Arl Welles",NA,1,5419,778,"F","1115","P"
 "5426_01","Earth","FALSE","F/1038/S","TRAPPIST-1e",35,"FALSE",91,1797,123,0,163,"Jone Holton",NA,1,5426,2174,"F","1038","S"
 "5428_01","Earth","FALSE","F/1039/S","TRAPPIST-1e",16,"FALSE",444,0,1,231,84,"Kylen Huntt",NA,1,5428,760,"F","1039","S"
-"5428_02","Earth","TRUE","G/1056/NA","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Loria Huntt",NA,2,5428,0,"G","1056",NA
+"5428_02","Earth","TRUE","G/1056/P","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Loria Huntt",NA,2,5428,0,"G","1056","P"
 "5429_01","Earth","FALSE","F/1119/P","TRAPPIST-1e",43,"FALSE",49,20,0,0,1075,"Cathya Leeves",NA,1,5429,1144,"F","1119","P"
 "5432_01","Earth","FALSE","F/1120/P","TRAPPIST-1e",31,"FALSE",0,8,1987,0,0,"Celis Chardsons",NA,1,5432,1995,"F","1120","P"
 "5433_01","Europa","FALSE","A/66/S","TRAPPIST-1e",33.0651416122004,"FALSE",0,4853,0,150,50,"Pent Derterval",NA,1,5433,5053,"A","66","S"
@@ -2499,7 +2499,7 @@
 "5442_01","Earth","FALSE","F/1042/S","TRAPPIST-1e",48,"FALSE",0,79,0,4,1366,"Julion Sextones",NA,1,5442,1449,"F","1042","S"
 "5444_01","Earth","FALSE","F/1043/S","55 Cancri e",20,"FALSE",557,164,1,0,0,"Samie Halexandez",NA,1,5444,722,"F","1043","S"
 "5448_01","Mars","FALSE","D/165/S","TRAPPIST-1e",35,"FALSE",1400,0,984,0,0,"Pebray Date",NA,1,5448,2384,"D","165","S"
-"5449_01","Earth","FALSE","F/1056/NA","55 Cancri e",23,"FALSE",56,272,35,264,0,"Trice Oneidson",NA,1,5449,627,"F","1056",NA
+"5449_01","Earth","FALSE","F/1056/P","55 Cancri e",23,"FALSE",56,272,35,264,0,"Trice Oneidson",NA,1,5449,627,"F","1056","P"
 "5456_01","Earth","FALSE","F/1128/P","TRAPPIST-1e",28,"FALSE",478,0,202,0,36,"Geneen Hinetthews",NA,1,5456,716,"F","1128","P"
 "5460_01","Earth","FALSE","F/1130/P","PSO J318.5-22",19,"FALSE",24,1,115,37,479,"Candra Baldson",NA,1,5460,656,"F","1130","P"
 "5461_01","Europa","FALSE","E/352/S","55 Cancri e",45,"FALSE",0,2570,0,1510,2777,"Giedia Brugashed",NA,1,5461,6857,"E","352","S"
@@ -2537,7 +2537,7 @@
 "5553_01","Mars","TRUE","F/1151/P","TRAPPIST-1e",44,"FALSE",0,0,0,0,0,"Kokrus Traie",NA,1,5553,0,"F","1151","P"
 "5553_02","Mars","FALSE","F/1151/P","TRAPPIST-1e",18,"FALSE",163,0,1079,0,0,"Heales Traie",NA,2,5553,1242,"F","1151","P"
 "5554_01","Earth","TRUE","G/889/P","TRAPPIST-1e",21,"FALSE",0,0,0,0,0,"Jarena Mayder",NA,1,5554,0,"G","889","P"
-"5558_01","Mars","FALSE","F/1056/NA","TRAPPIST-1e",65,"FALSE",1004,0,108,47,22,"Rail Prité",NA,1,5558,1181,"F","1056",NA
+"5558_01","Mars","FALSE","F/1056/P","TRAPPIST-1e",65,"FALSE",1004,0,108,47,22,"Rail Prité",NA,1,5558,1181,"F","1056","P"
 "5562_01","Europa","TRUE","D/169/S","TRAPPIST-1e",18,"FALSE",0,0,0,0,0,NA,NA,1,5562,0,"D","169","S"
 "5562_02","Europa","TRUE","D/169/S","55 Cancri e",27,"FALSE",0,0,0,0,0,"Solaron Ofracculy",NA,2,5562,0,"D","169","S"
 "5564_01","Earth","FALSE","F/1152/P","TRAPPIST-1e",16,"FALSE",641,0,0,118,814,"Jimen Horndley",NA,1,5564,1573,"F","1152","P"
@@ -2646,7 +2646,7 @@
 "5803_01","Earth","TRUE","G/932/P","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Regana Belley",NA,1,5803,0,"G","932","P"
 "5805_01","Earth","FALSE","G/942/S","TRAPPIST-1e",23,"FALSE",1723,0,2,0,0,"Kenny Haynardy",NA,1,5805,1725,"G","942","S"
 "5807_01","Earth","FALSE","F/1110/S","TRAPPIST-1e",26,"FALSE",605,0,35,424,0,"Fany Hickerson",NA,1,5807,1064,"F","1110","S"
-"5815_01","Europa","FALSE","C/292/NA","TRAPPIST-1e",28,"FALSE",0,2703,327,3048,50,"Polar Roftfuling",NA,1,5815,6128,"C","292",NA
+"5815_01","Europa","FALSE","C/292/P","TRAPPIST-1e",28,"FALSE",0,2703,327,3048,50,"Polar Roftfuling",NA,1,5815,6128,"C","292","P"
 "5815_02","Europa","FALSE","B/197/P","TRAPPIST-1e",42,"FALSE",0,194,0,2146,213,"Antino Roftfuling",NA,2,5815,2553,"B","197","P"
 "5815_03","Europa","FALSE","B/197/P","55 Cancri e",37,"FALSE",369,1166,1,284,1273,"Proxima Wincer",NA,3,5815,3093,"B","197","P"
 "5815_04","Europa","FALSE","B/197/P","55 Cancri e",45,"FALSE",0,595,0,19844,48,"Hassias Dishearly",NA,4,5815,20487,"B","197","P"
@@ -2745,7 +2745,7 @@
 "6053_01","Earth","FALSE","G/981/P","PSO J318.5-22",46,"FALSE",0,9,0,0,527,"Glenna Pecketton",NA,1,6053,536,"G","981","P"
 "6056_01","Mars","FALSE","F/1152/S","TRAPPIST-1e",34,"FALSE",1139,0,0,1460,0,"Booss Opité",NA,1,6056,2599,"F","1152","S"
 "6057_01","Earth","FALSE","F/1252/P","TRAPPIST-1e",39,"FALSE",51,322,1066,69,0,"Moniey Frazie",NA,1,6057,1508,"F","1252","P"
-"6060_01","Mars","FALSE","F/1056/NA","TRAPPIST-1e",37,"FALSE",1517,0,2104,0,147,"Bleda Barte",NA,1,6060,3768,"F","1056",NA
+"6060_01","Mars","FALSE","F/1056/P","TRAPPIST-1e",37,"FALSE",1517,0,2104,0,147,"Bleda Barte",NA,1,6060,3768,"F","1056","P"
 "6063_01","Earth","TRUE","G/983/P","55 Cancri e",13,"FALSE",0,0,0,0,0,"Jamela Gainney",NA,1,6063,0,"G","983","P"
 "6072_01","Earth","FALSE","F/1155/S","55 Cancri e",20,"FALSE",0,141,0,0,581,"Andine Ellahan",NA,1,6072,722,"F","1155","S"
 "6074_01","Mars","FALSE","D/187/S","TRAPPIST-1e",28,"FALSE",283,521,978,0,0,"Gral Anate",NA,1,6074,1782,"D","187","S"
@@ -2779,7 +2779,7 @@
 "6142_02","Europa","TRUE","E/393/P","Other",35,"FALSE",0,0,0,0,0,"Zosmar Inkcablel",NA,2,6142,0,"E","393","P"
 "6144_01","Earth","TRUE","G/993/P","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Fany Chaellerty",NA,1,6144,0,"G","993","P"
 "6147_01","Earth","FALSE","G/994/P","PSO J318.5-22",29.877177508269,"FALSE",0,0,0,498,0,"Tera Knoxtones",NA,1,6147,498,"G","994","P"
-"6151_01","Europa","FALSE","C/292/NA","TRAPPIST-1e",33,"FALSE",0,187,0,2758,564,"Achium Hometerval",NA,1,6151,3509,"C","292",NA
+"6151_01","Europa","FALSE","C/292/P","TRAPPIST-1e",33,"FALSE",0,187,0,2758,564,"Achium Hometerval",NA,1,6151,3509,"C","292","P"
 "6151_02","Europa","TRUE","C/190/P","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Mulkes Hometerval",NA,2,6151,0,"C","190","P"
 "6154_01","Earth","TRUE","G/995/P","55 Cancri e",32,"FALSE",0,0,0,0,0,"Lyney Sellahaney",NA,1,6154,0,"G","995","P"
 "6159_01","Earth","FALSE","F/1180/S","55 Cancri e",25,"FALSE",0,0,233,63,340,"Marky Pentss",NA,1,6159,636,"F","1180","S"
@@ -2869,7 +2869,7 @@
 "6307_01","Earth","FALSE","F/1306/P","55 Cancri e",32,"FALSE",7,0,9,0,0,"Emilla Huffy",NA,1,6307,16,"F","1306","P"
 "6310_01","Mars","FALSE","E/417/S","TRAPPIST-1e",26,"FALSE",1243,0,51,4,0,"Jell Botte",NA,1,6310,1298,"E","417","S"
 "6311_01","Earth","FALSE","F/1207/S","TRAPPIST-1e",22,"FALSE",0,716,0,0,0,"Eriky Spencervan",NA,1,6311,716,"F","1207","S"
-"6312_01","Europa","FALSE","C/292/NA","55 Cancri e",56,"FALSE",0,2854,25,279,48,"Ainkard Emonater",NA,1,6312,3206,"C","292",NA
+"6312_01","Europa","FALSE","C/292/P","55 Cancri e",56,"FALSE",0,2854,25,279,48,"Ainkard Emonater",NA,1,6312,3206,"C","292","P"
 "6312_02","Europa","FALSE","A/63/P","TRAPPIST-1e",29,"FALSE",0,602,259,1394,14587,"Furudah Emonater",NA,2,6312,16842,"A","63","P"
 "6314_01","Earth","FALSE","G/1024/S","TRAPPIST-1e",21,"FALSE",80,0,0,0,730,"Alie Valexandez",NA,1,6314,810,"G","1024","S"
 "6329_01","Europa","FALSE","C/236/S","TRAPPIST-1e",34,"FALSE",3186,687,73,0,828,"Celavas Clindy",NA,1,6329,4774,"C","236","S"
@@ -2907,7 +2907,7 @@
 "6386_01","Earth","FALSE","F/1324/P","55 Cancri e",34,"FALSE",0,712,9,0,0,"Shaele Roachoanand",NA,1,6386,721,"F","1324","P"
 "6387_01","Earth","FALSE","F/1325/P","TRAPPIST-1e",30,"FALSE",228,503,73,0,60,"Felia Simsey",NA,1,6387,864,"F","1325","P"
 "6389_01","Mars","FALSE","F/1221/S","55 Cancri e",22,"FALSE",2642,0,5,15,0,"Proos Fan",NA,1,6389,2662,"F","1221","S"
-"6391_01","Mars","TRUE","F/1056/NA","TRAPPIST-1e",23,"FALSE",0,0,0,0,0,"Wolous Chate",NA,1,6391,0,"F","1056",NA
+"6391_01","Mars","TRUE","F/1056/P","TRAPPIST-1e",23,"FALSE",0,0,0,0,0,"Wolous Chate",NA,1,6391,0,"F","1056","P"
 "6391_02","Mars","TRUE","F/1326/P","TRAPPIST-1e",59,"FALSE",0,0,0,0,0,"Gratsp Chate",NA,2,6391,0,"F","1326","P"
 "6392_01","Mars","TRUE","F/1222/S","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Jagles Dun",NA,1,6392,0,"F","1222","S"
 "6393_01","Mars","TRUE","E/406/P","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Craird Mille",NA,1,6393,0,"E","406","P"
@@ -2960,18 +2960,18 @@
 "6499_08","Earth","TRUE","G/1052/P","PSO J318.5-22",6,"FALSE",0,0,0,0,0,"Eleah Barnolderg",NA,8,6499,0,"G","1052","P"
 "6504_01","Europa","TRUE","C/202/P","55 Cancri e",36,"FALSE",0,0,0,0,0,"Menkin Righturter",NA,1,6504,0,"C","202","P"
 "6504_02","Europa","FALSE","C/202/P","TRAPPIST-1e",27,"FALSE",0,16250,2332,2442,1152,"Sabiark Righturter",NA,2,6504,22176,"C","202","P"
-"6505_01","Earth","FALSE","F/1056/NA","TRAPPIST-1e",20,"FALSE",705,0,0,0,1,"Kylen Coleyanglas",NA,1,6505,706,"F","1056",NA
+"6505_01","Earth","FALSE","F/1056/P","TRAPPIST-1e",20,"FALSE",705,0,0,0,1,"Kylen Coleyanglas",NA,1,6505,706,"F","1056","P"
 "6506_01","Earth","FALSE","F/1241/S","PSO J318.5-22",24,"FALSE",1463,0,84,0,2,"Harlen Flynner",NA,1,6506,1549,"F","1241","S"
 "6506_02","Earth","FALSE","G/1059/S","55 Cancri e",21,"FALSE",0,45,0,377,284,"Clindy Flynner",NA,2,6506,706,"G","1059","S"
 "6507_01","Earth","TRUE","G/1054/P","55 Cancri e",50,"FALSE",0,0,0,0,0,"Bethew Hartz",NA,1,6507,0,"G","1054","P"
 "6515_01","Earth","FALSE","F/1349/P","TRAPPIST-1e",18,"FALSE",0,1354,0,0,9,"Olly Reyersendry",NA,1,6515,1363,"F","1349","P"
 "6516_01","Europa","TRUE","C/241/S","TRAPPIST-1e",34,"FALSE",0,0,0,0,0,"Skatzn Dynigic",NA,1,6516,0,"C","241","S"
 "6516_02","Europa","TRUE","C/241/S","55 Cancri e",22,"FALSE",0,0,0,0,0,"Bahoton Dynigic",NA,2,6516,0,"C","241","S"
-"6518_01","Mars","TRUE","F/1056/NA","TRAPPIST-1e",63,"FALSE",0,0,0,0,0,"Tos Perie",NA,1,6518,0,"F","1056",NA
+"6518_01","Mars","TRUE","F/1056/P","TRAPPIST-1e",63,"FALSE",0,0,0,0,0,"Tos Perie",NA,1,6518,0,"F","1056","P"
 "6519_01","Mars","FALSE","F/1351/P","TRAPPIST-1e",39,"TRUE",1096,0,647,7,0,"Rhimp Chcak",NA,1,6519,1750,"F","1351","P"
 "6521_01","Mars","FALSE","D/206/P","TRAPPIST-1e",26,"FALSE",1018,0,0,0,42,"Chrey Colte",NA,1,6521,1060,"D","206","P"
 "6524_01","Mars","FALSE","F/1247/S","55 Cancri e",27,"FALSE",946,96,26,5,0,"Conk Sche",NA,1,6524,1073,"F","1247","S"
-"6527_01","Earth","TRUE","G/1056/NA","PSO J318.5-22",17,"FALSE",0,0,0,0,0,"Almara Figuez",NA,1,6527,0,"G","1056",NA
+"6527_01","Earth","TRUE","G/1056/P","PSO J318.5-22",17,"FALSE",0,0,0,0,0,"Almara Figuez",NA,1,6527,0,"G","1056","P"
 "6528_01","Earth","TRUE","G/1057/P","PSO J318.5-22",39,"FALSE",0,0,0,0,0,"Louisy Cardsay",NA,1,6528,0,"G","1057","P"
 "6532_01","Earth","FALSE","F/1352/P","55 Cancri e",26,"FALSE",0,405,2,101,251,"All Vanglis",NA,1,6532,759,"F","1352","P"
 "6533_01","Earth","TRUE","G/1058/P","TRAPPIST-1e",30,"FALSE",0,0,0,0,0,"Lolas Foledges",NA,1,6533,0,"G","1058","P"
@@ -3015,12 +3015,12 @@
 "6610_01","Earth","TRUE","G/1068/P","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Lyn Brookes",NA,1,6610,0,"G","1068","P"
 "6612_01","Earth","FALSE","G/1077/S","TRAPPIST-1e",8.61464968152866,"FALSE",0,0,0,0,0,"Elanie Ewiseston",NA,1,6612,0,"G","1077","S"
 "6612_02","Earth","FALSE","G/1077/S","TRAPPIST-1e",27,"FALSE",864,1,0,0,23,"Kaye Barks",NA,2,6612,888,"G","1077","S"
-"6612_03","Earth","FALSE","F/1056/NA","TRAPPIST-1e",29,"FALSE",121,0,55,12,638,"Daley Dickley",NA,3,6612,826,"F","1056",NA
+"6612_03","Earth","FALSE","F/1056/P","TRAPPIST-1e",29,"FALSE",121,0,55,12,638,"Daley Dickley",NA,3,6612,826,"F","1056","P"
 "6612_04","Earth","FALSE","G/1077/S","55 Cancri e",6,"FALSE",0,0,0,0,0,"Deanny Barks",NA,4,6612,0,"G","1077","S"
-"6612_05","Earth","FALSE","G/1056/NA","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Maurie Dickley",NA,5,6612,0,"G","1056",NA
+"6612_05","Earth","FALSE","G/1056/P","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Maurie Dickley",NA,5,6612,0,"G","1056","P"
 "6612_06","Earth","TRUE","G/1077/S","PSO J318.5-22",6,"FALSE",0,0,0,0,0,"Heryle Dickley",NA,6,6612,0,"G","1077","S"
 "6615_01","Mars","TRUE","F/1376/P","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Bers Sake",NA,1,6615,0,"F","1376","P"
-"6617_01","Europa","TRUE","B/292/NA","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Mareson Timpeed",NA,1,6617,0,"B","292",NA
+"6617_01","Europa","TRUE","B/292/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Mareson Timpeed",NA,1,6617,0,"B","292","P"
 "6617_02","Europa","TRUE","C/206/P","55 Cancri e",35,"FALSE",0,0,0,0,0,"Beneba Timpeed",NA,2,6617,0,"C","206","P"
 "6617_03","Europa","TRUE","C/206/P","55 Cancri e",13,"FALSE",0,0,0,0,0,"Dilamin Timpeed",NA,3,6617,0,"C","206","P"
 "6619_01","Europa","FALSE","C/207/P","TRAPPIST-1e",64,"FALSE",0,495,0,2420,1844,"Arkard Tashal",NA,1,6619,4759,"C","207","P"
@@ -3053,7 +3053,7 @@
 "6689_02","Mars","FALSE","F/1281/S","TRAPPIST-1e",50,"FALSE",286,0,735,20,0,"Volath Curry",NA,2,6689,1041,"F","1281","S"
 "6690_01","Earth","TRUE","G/1090/S","TRAPPIST-1e",15,"FALSE",0,0,0,0,0,"Tonnie Hardsonerry",NA,1,6690,0,"G","1090","S"
 "6695_01","Earth","FALSE","F/1391/P","55 Cancri e",34,"FALSE",36,229,468,72,0,"Reneen Dayers",NA,1,6695,805,"F","1391","P"
-"6696_01","Earth","FALSE","F/1056/NA","TRAPPIST-1e",35,"FALSE",14,320,1078,0,3,"Oraine Tranklinay",NA,1,6696,1415,"F","1056",NA
+"6696_01","Earth","FALSE","F/1056/P","TRAPPIST-1e",35,"FALSE",14,320,1078,0,3,"Oraine Tranklinay",NA,1,6696,1415,"F","1056","P"
 "6700_01","Earth","TRUE","G/1086/P","TRAPPIST-1e",34,"FALSE",0,0,0,0,0,"Carlie Whiters",NA,1,6700,0,"G","1086","P"
 "6700_02","Earth","FALSE","G/1086/P","TRAPPIST-1e",36,"FALSE",0,0,0,808,0,"Doryn Willynnedy",NA,2,6700,808,"G","1086","P"
 "6701_01","Europa","TRUE","B/257/S","TRAPPIST-1e",27,"FALSE",0,0,0,0,0,"Zaninon Rackepery",NA,1,6701,0,"B","257","S"
@@ -3096,7 +3096,7 @@
 "6783_01","Earth","TRUE","G/1101/P","TRAPPIST-1e",43,"FALSE",0,0,0,0,0,"Wallyn Ortinericey",NA,1,6783,0,"G","1101","P"
 "6785_01","Earth","TRUE","G/1102/P","TRAPPIST-1e",30,"FALSE",0,0,0,0,0,"Lesley Mcfarmerson",NA,1,6785,0,"G","1102","P"
 "6790_01","Earth","FALSE","G/1103/S","PSO J318.5-22",33,"FALSE",455,0,11,0,302,"Jonaye Boyersons",NA,1,6790,768,"G","1103","S"
-"6791_01","Earth","FALSE","F/1056/NA","55 Cancri e",33,"FALSE",0,1601,57,0,0,"Lis Hayertez",NA,1,6791,1658,"F","1056",NA
+"6791_01","Earth","FALSE","F/1056/P","55 Cancri e",33,"FALSE",0,1601,57,0,0,"Lis Hayertez",NA,1,6791,1658,"F","1056","P"
 "6793_01","Europa","FALSE","B/228/P","TRAPPIST-1e",42,"FALSE",88,2062,0,25,0,"Nasl Wassing",NA,1,6793,2175,"B","228","P"
 "6793_02","Europa","TRUE","B/228/P","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Branev Wassing",NA,2,6793,0,"B","228","P"
 "6795_01","Mars","FALSE","E/433/P","TRAPPIST-1e",18,"TRUE",988,0,732,356,0,"Coobix Gecre",NA,1,6795,2076,"E","433","P"
@@ -3159,7 +3159,7 @@
 "6909_01","Europa","TRUE","B/231/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Kaffias Shoeweely",NA,1,6909,0,"B","231","P"
 "6914_01","Earth","TRUE","G/1125/S","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Iree Romez",NA,1,6914,0,"G","1125","S"
 "6916_01","Europa","TRUE","B/232/P","TRAPPIST-1e",58,"FALSE",0,0,0,0,0,"Gluinol Wassing",NA,1,6916,0,"B","232","P"
-"6919_01","Earth","TRUE","G/1056/NA","PSO J318.5-22",37,"FALSE",0,0,0,0,0,"Len Bulliamoses",NA,1,6919,0,"G","1056",NA
+"6919_01","Earth","TRUE","G/1056/P","PSO J318.5-22",37,"FALSE",0,0,0,0,0,"Len Bulliamoses",NA,1,6919,0,"G","1056","P"
 "6922_01","Earth","TRUE","G/1119/P","PSO J318.5-22",35,"FALSE",0,0,0,0,0,"Harlos Payner",NA,1,6922,0,"G","1119","P"
 "6923_01","Mars","TRUE","F/1434/P","TRAPPIST-1e",38,"FALSE",0,0,0,0,0,"Cobix Tecre",NA,1,6923,0,"F","1434","P"
 "6927_01","Earth","FALSE","G/1121/P","TRAPPIST-1e",32,"FALSE",0,270,0,560,84,"Derina Mcdowns",NA,1,6927,914,"G","1121","P"
@@ -3202,9 +3202,9 @@
 "7000_01","Mars","TRUE","F/1335/S","TRAPPIST-1e",35,"FALSE",0,0,0,0,0,"Munch Blane",NA,1,7000,0,"F","1335","S"
 "7003_01","Earth","FALSE","F/1336/S","TRAPPIST-1e",22,"FALSE",0,0,332,236,125,"Mamina Gordanieves",NA,1,7003,693,"F","1336","S"
 "7009_01","Mars","FALSE","D/214/S","55 Cancri e",16,"FALSE",2438,0,332,0,1,"Quid Spie",NA,1,7009,2771,"D","214","S"
-"7009_02","Mars","FALSE","F/1618/NA","TRAPPIST-1e",18,"FALSE",1718,0,868,636,0,"Diedow Spie",NA,2,7009,3222,"F","1618",NA
+"7009_02","Mars","FALSE","F/1618/S","TRAPPIST-1e",18,"FALSE",1718,0,868,636,0,"Diedow Spie",NA,2,7009,3222,"F","1618","S"
 "7012_01","Mars","TRUE","F/1456/P","TRAPPIST-1e",26,"FALSE",0,0,0,0,0,"Park Stake",NA,1,7012,0,"F","1456","P"
-"7023_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",19,"FALSE",478,0,161,112,0,"Regory Daughtson",NA,1,7023,751,"F","1618",NA
+"7023_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",19,"FALSE",478,0,161,112,0,"Regory Daughtson",NA,1,7023,751,"F","1618","P"
 "7024_01","Mars","TRUE","E/468/S","55 Cancri e",23,"FALSE",0,0,0,0,0,"Ret Cart",NA,1,7024,0,"E","468","S"
 "7030_01","Earth","FALSE","G/1149/S","TRAPPIST-1e",21,"FALSE",0,141,0,121,626,"Thel Bailes",NA,1,7030,888,"G","1149","S"
 "7033_01","Earth","FALSE","F/1460/P","TRAPPIST-1e",32,"FALSE",131,0,0,5,0,"Tinez Bensley",NA,1,7033,136,"F","1460","P"
@@ -3242,11 +3242,11 @@
 "7112_01","Earth","FALSE","F/1360/S","TRAPPIST-1e",22,"FALSE",22,0,1367,0,0,"Pamont Blange",NA,1,7112,1389,"F","1360","S"
 "7115_01","Mars","TRUE","F/1474/P","TRAPPIST-1e",36,"FALSE",0,0,0,0,0,"Ber Pepie",NA,1,7115,0,"F","1474","P"
 "7122_01","Earth","FALSE","F/1364/S","TRAPPIST-1e",35,"FALSE",0,0,904,0,0,"Darlie Gillock",NA,1,7122,904,"F","1364","S"
-"7123_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",26,"FALSE",699,0,5,50,1,"Sallie Hartz",NA,1,7123,755,"F","1618",NA
+"7123_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",26,"FALSE",699,0,5,50,1,"Sallie Hartz",NA,1,7123,755,"F","1618","P"
 "7124_01","Europa","TRUE","C/229/P","TRAPPIST-1e",15,"FALSE",0,0,0,0,0,"Eltares Aillyber",NA,1,7124,0,"C","229","P"
 "7124_02","Europa","TRUE","C/229/P","55 Cancri e",18,"FALSE",0,0,0,0,0,"Menkard Aillyber",NA,2,7124,0,"C","229","P"
 "7124_03","Europa","FALSE","C/229/P","Other",41,"FALSE",0,2925,0,1623,0,"Tarrak Aillyber",NA,3,7124,4548,"C","229","P"
-"7125_01","Mars","TRUE","F/1618/NA","PSO J318.5-22",41,"FALSE",0,0,0,0,0,"Nakes Eccle",NA,1,7125,0,"F","1618",NA
+"7125_01","Mars","TRUE","F/1618/P","PSO J318.5-22",41,"FALSE",0,0,0,0,0,"Nakes Eccle",NA,1,7125,0,"F","1618","P"
 "7129_01","Earth","FALSE","F/1367/S","TRAPPIST-1e",22,"FALSE",8,796,1825,553,0,"Curtle Klinson",NA,1,7129,3182,"F","1367","S"
 "7130_01","Earth","TRUE","G/1147/P","55 Cancri e",27.4868035190616,"FALSE",0,0,0,0,0,"Ine Jacostarks",NA,1,7130,0,"G","1147","P"
 "7130_02","Earth","TRUE","G/1147/P","PSO J318.5-22",0,"FALSE",0,0,0,0,0,"Anney Jacostarks",NA,2,7130,0,"G","1147","P"
@@ -3281,7 +3281,7 @@
 "7172_02","Mars","FALSE","E/477/S","TRAPPIST-1e",52,"FALSE",1350,0,0,0,19,"Skix Letty",NA,2,7172,1369,"E","477","S"
 "7174_01","Earth","FALSE","F/1379/S","TRAPPIST-1e",21,"FALSE",0,4,4,636,0,"Gleney Solinez",NA,1,7174,644,"F","1379","S"
 "7178_01","Mars","TRUE","F/1487/P","TRAPPIST-1e",36,"FALSE",0,0,0,0,0,"Allota Bush",NA,1,7178,0,"F","1487","P"
-"7183_01","Earth","TRUE","G/1322/NA","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Janne Brookes",NA,1,7183,0,"G","1322",NA
+"7183_01","Earth","TRUE","G/1322/P","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Janne Brookes",NA,1,7183,0,"G","1322","P"
 "7185_01","Europa","TRUE","D/224/P","TRAPPIST-1e",39,"FALSE",0,0,0,0,0,"Arix Baltragnal",NA,1,7185,0,"D","224","P"
 "7195_01","Earth","TRUE","G/1173/S","TRAPPIST-1e",59,"FALSE",0,0,0,0,0,"Gretty Hallahaney",NA,1,7195,0,"G","1173","S"
 "7196_01","Mars","TRUE","F/1491/P","55 Cancri e",45,"FALSE",0,0,0,0,0,"Griste Crité",NA,1,7196,0,"F","1491","P"
@@ -3316,7 +3316,7 @@
 "7262_01","Mars","FALSE","F/1504/P","TRAPPIST-1e",45,"FALSE",381,1,1512,586,0,"Eang Cheen",NA,1,7262,2480,"F","1504","P"
 "7263_01","Other","FALSE","F/1399/S","TRAPPIST-1e",30,"FALSE",1,0,478,4,321,"Joela Bonder",NA,1,7263,804,"F","1399","S"
 "7264_01","Earth","FALSE","F/1400/S","TRAPPIST-1e",56,"FALSE",758,0,0,0,1,"Robyny Conleydenan",NA,1,7264,759,"F","1400","S"
-"7265_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",13,"FALSE",0,324,138,49,133,"Calvia Bookson",NA,1,7265,644,"F","1618",NA
+"7265_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",13,"FALSE",0,324,138,49,133,"Calvia Bookson",NA,1,7265,644,"F","1618","P"
 "7266_01","Earth","FALSE","G/1182/S","TRAPPIST-1e",19,"FALSE",0,0,39,449,321,"Dorie Lardy",NA,1,7266,809,"G","1182","S"
 "7266_02","Earth","TRUE","G/1182/S","TRAPPIST-1e",46,"FALSE",0,0,0,0,0,"Doray Lardy",NA,2,7266,0,"G","1182","S"
 "7266_03","Earth","FALSE","G/1182/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Aliey Lardy",NA,3,7266,0,"G","1182","S"
@@ -3367,7 +3367,7 @@
 "7362_01","Earth","FALSE","G/1195/S","TRAPPIST-1e",37,"FALSE",48,84,0,20,658,"Alber Hornettoney",NA,1,7362,810,"G","1195","S"
 "7363_01","Earth","TRUE","G/1182/P","TRAPPIST-1e",65,"FALSE",0,0,0,0,0,NA,NA,1,7363,0,"G","1182","P"
 "7364_01","Earth","FALSE","G/1196/S","TRAPPIST-1e",44,"FALSE",1,0,0,0,0,NA,NA,1,7364,1,"G","1196","S"
-"7368_01","Europa","TRUE","B/292/NA","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Pharmus Frolestty",NA,1,7368,0,"B","292",NA
+"7368_01","Europa","TRUE","B/292/P","TRAPPIST-1e",31,"FALSE",0,0,0,0,0,"Pharmus Frolestty",NA,1,7368,0,"B","292","P"
 "7369_01","Mars","FALSE","F/1524/P","TRAPPIST-1e",31,"FALSE",953,0,20,382,556,NA,NA,1,7369,1911,"F","1524","P"
 "7373_01","Europa","TRUE","B/275/S","TRAPPIST-1e",21,"FALSE",0,0,0,0,0,"Alyark Unrent",NA,1,7373,0,"B","275","S"
 "7373_02","Europa","TRUE","B/275/S","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Ruchban Unrent",NA,2,7373,0,"B","275","S"
@@ -3388,7 +3388,7 @@
 "7400_01","Earth","FALSE","F/1532/P","PSO J318.5-22",41,"FALSE",366,0,0,17,331,"Card Waderoachez",NA,1,7400,714,"F","1532","P"
 "7404_01","Earth","TRUE","G/1199/S","TRAPPIST-1e",26,"FALSE",0,0,0,0,0,"Thew Stanleyd",NA,1,7404,0,"G","1199","S"
 "7407_01","Mars","FALSE","E/480/P","TRAPPIST-1e",27,"FALSE",213,1083,1,0,1,"Mitch Staf",NA,1,7407,1298,"E","480","P"
-"7409_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",39,"FALSE",791,0,0,94,0,"Dord Solinez",NA,1,7409,885,"F","1618",NA
+"7409_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",39,"FALSE",791,0,0,94,0,"Dord Solinez",NA,1,7409,885,"F","1618","P"
 "7409_02","Earth","FALSE","F/1421/S","TRAPPIST-1e",34,"FALSE",0,14,775,14,0,"Raulia Solinez",NA,2,7409,803,"F","1421","S"
 "7412_01","Europa","TRUE","C/273/S","55 Cancri e",33,"FALSE",0,0,0,0,0,"Chellus Ambleetive",NA,1,7412,0,"C","273","S"
 "7413_01","Earth","TRUE","G/1196/P","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Evendy Bushafford",NA,1,7413,0,"G","1196","P"
@@ -3410,17 +3410,17 @@
 "7434_01","Earth","FALSE","E/482/P","TRAPPIST-1e",21,"FALSE",0,0,3,0,1617,"Caseya Whitersone",NA,1,7434,1620,"E","482","P"
 "7439_01","Europa","FALSE","B/280/S","TRAPPIST-1e",54,"FALSE",0,384,0,37,1721,"Alzird Pranscreer",NA,1,7439,2142,"B","280","S"
 "7439_02","Europa","TRUE","B/280/S","55 Cancri e",21,"FALSE",0,0,0,0,0,"Ziba Pranscreer",NA,2,7439,0,"B","280","S"
-"7440_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",36,"FALSE",698,63,1,1,135,"Ine Pollarkeeks",NA,1,7440,898,"F","1618",NA
+"7440_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",36,"FALSE",698,63,1,1,135,"Ine Pollarkeeks",NA,1,7440,898,"F","1618","P"
 "7441_01","Europa","TRUE","B/245/P","TRAPPIST-1e",21,"FALSE",0,0,0,0,0,"Phacton Glousspidy",NA,1,7441,0,"B","245","P"
 "7443_01","Earth","TRUE","G/1207/S","PSO J318.5-22",21,"FALSE",0,0,0,0,0,"Bertle Woodwinez",NA,1,7443,0,"G","1207","S"
 "7451_01","Earth","FALSE","F/1542/P","TRAPPIST-1e",23,"FALSE",49,2110,8,0,568,"Deandy Sextones",NA,1,7451,2735,"F","1542","P"
 "7454_01","Earth","FALSE","G/1209/S","PSO J318.5-22",40,"FALSE",7,0,83,230,220,"Alley Fersongs",NA,1,7454,540,"G","1209","S"
-"7463_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",18,"FALSE",0,0,0,0,677,"Terrie Mickersones",NA,1,7463,677,"F","1618",NA
+"7463_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",18,"FALSE",0,0,0,0,677,"Terrie Mickersones",NA,1,7463,677,"F","1618","P"
 "7465_01","Earth","FALSE","E/497/S","TRAPPIST-1e",25,"FALSE",61,0,701,75,68,"Adammy Workmanson",NA,1,7465,905,"E","497","S"
 "7466_01","Mars","FALSE","F/1425/S","TRAPPIST-1e",24,"FALSE",1289,0,0,0,0,"Mass Man",NA,1,7466,1289,"F","1425","S"
 "7467_01","Europa","FALSE","E/484/P","TRAPPIST-1e",37,"FALSE",0,203,0,603,629,"Asellan Geatenth",NA,1,7467,1435,"E","484","P"
 "7468_01","Europa","FALSE","E/498/S","TRAPPIST-1e",25,"FALSE",13,0,0,1,132,"Arrai Unhaftimle",NA,1,7468,146,"E","498","S"
-"7469_01","Other","FALSE","F/1618/NA","TRAPPIST-1e",24,"FALSE",433,110,209,23,0,"Cliney Baxterson",NA,1,7469,775,"F","1618",NA
+"7469_01","Other","FALSE","F/1618/P","TRAPPIST-1e",24,"FALSE",433,110,209,23,0,"Cliney Baxterson",NA,1,7469,775,"F","1618","P"
 "7470_01","Earth","TRUE","G/1213/S","TRAPPIST-1e",3,"FALSE",0,0,0,0,0,"Racy Conleydenan",NA,1,7470,0,"G","1213","S"
 "7471_01","Earth","TRUE","G/1208/P","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,NA,NA,1,7471,0,"G","1208","P"
 "7471_02","Earth","FALSE","G/1208/P","TRAPPIST-1e",22,"FALSE",0,270,0,0,486,"Allia Fryersonis",NA,2,7471,756,"G","1208","P"
@@ -3465,7 +3465,7 @@
 "7555_01","Other","FALSE","E/491/P","55 Cancri e",30,"FALSE",1487,306,478,65,1,"Gocock Kie",NA,1,7555,2337,"E","491","P"
 "7556_01","Europa","TRUE","C/280/S","TRAPPIST-1e",48,"FALSE",0,0,0,0,0,"Edasim Mosteraked",NA,1,7556,0,"C","280","S"
 "7556_02","Other","TRUE","C/280/S","55 Cancri e",38,"FALSE",0,0,0,0,0,"Cherrak Mosteraked",NA,2,7556,0,"C","280","S"
-"7556_03","Europa","FALSE","C/292/NA","TRAPPIST-1e",33,"FALSE",0,673,0,0,783,"Cella Mosteraked",NA,3,7556,1456,"C","292",NA
+"7556_03","Europa","FALSE","C/292/S","TRAPPIST-1e",33,"FALSE",0,673,0,0,783,"Cella Mosteraked",NA,3,7556,1456,"C","292","S"
 "7556_04","Europa","TRUE","C/280/S","55 Cancri e",47,"FALSE",0,0,0,0,0,"Shabih Spedlinale",NA,4,7556,0,"C","280","S"
 "7557_01","Mars","FALSE","F/1567/P","TRAPPIST-1e",29,"FALSE",1118,0,606,50,0,"Root Gine",NA,1,7557,1774,"F","1567","P"
 "7557_02","Mars","TRUE","F/1567/P","TRAPPIST-1e",8,"FALSE",0,0,0,0,0,"Jacats Gine",NA,2,7557,0,"F","1567","P"
@@ -3551,7 +3551,7 @@
 "7725_01","Europa","TRUE","D/243/P","TRAPPIST-1e",34,"FALSE",0,0,0,0,0,"Elebola Batonsufft",NA,1,7725,0,"D","243","P"
 "7726_01","Earth","TRUE","G/1241/P","TRAPPIST-1e",13,"FALSE",0,0,0,0,0,"Helly Belley",NA,1,7726,0,"G","1241","P"
 "7730_01","Other","FALSE","F/1473/S","PSO J318.5-22",25,"FALSE",10,6,0,1,570,"Jeanie Gibbsonton",NA,1,7730,587,"F","1473","S"
-"7732_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",43,"FALSE",8,0,0,780,0,"Sandie Thorney",NA,1,7732,788,"F","1618",NA
+"7732_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",43,"FALSE",8,0,0,780,0,"Sandie Thorney",NA,1,7732,788,"F","1618","P"
 "7733_01","Mars","FALSE","F/1474/S","TRAPPIST-1e",39,"FALSE",821,37,260,1,0,"Backse Hacle",NA,1,7733,1119,"F","1474","S"
 "7734_01","Earth","FALSE","F/1608/P","55 Cancri e",19,"FALSE",0,257,431,0,5,"Thel Krampbelles",NA,1,7734,693,"F","1608","P"
 "7735_01","Mars","FALSE","F/1475/S","Other",21,"FALSE",489,15,6,777,1,"Rhex Fine",NA,1,7735,1288,"F","1475","S"
@@ -3583,7 +3583,7 @@
 "7798_01","Earth","FALSE","E/507/P","TRAPPIST-1e",33.0651416122004,"FALSE",294,76,9,0,0,"Maen Burchard",NA,1,7798,379,"E","507","P"
 "7798_02","Earth","FALSE","F/1619/P","55 Cancri e",18,"FALSE",0,0,1446,0,0,"Jillie Burchard",NA,2,7798,1446,"F","1619","P"
 "7799_01","Earth","FALSE","G/1262/S","TRAPPIST-1e",18,"FALSE",13,9,721,3,63,"Ellie Vincenton",NA,1,7799,809,"G","1262","S"
-"7804_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",23,"FALSE",502,2,52,0,2698,"Eliana Beckerson",NA,1,7804,3254,"F","1618",NA
+"7804_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",23,"FALSE",502,2,52,0,2698,"Eliana Beckerson",NA,1,7804,3254,"F","1618","P"
 "7807_01","Other","TRUE","G/1255/P","PSO J318.5-22",21,"FALSE",0,0,0,0,0,"Veremy Blancoy",NA,1,7807,0,"G","1255","P"
 "7811_01","Mars","TRUE","E/512/S","TRAPPIST-1e",47,"FALSE",0,0,0,0,0,"Skix Pore",NA,1,7811,0,"E","512","S"
 "7814_01","Earth","FALSE","F/1623/P","TRAPPIST-1e",18,"FALSE",0,563,93,0,75,"Frandy Mcfaddoxter",NA,1,7814,731,"F","1623","P"
@@ -3628,7 +3628,7 @@
 "7911_01","Earth","TRUE","G/1277/S","TRAPPIST-1e",18,"FALSE",0,0,0,0,0,"Fayey Holcompton",NA,1,7911,0,"G","1277","S"
 "7912_01","Earth","FALSE","E/513/P","TRAPPIST-1e",20,"FALSE",1285,229,0,0,7,"Gwenda Fryersonis",NA,1,7912,1521,"E","513","P"
 "7915_01","Mars","TRUE","E/521/S","TRAPPIST-1e",20,"FALSE",0,0,0,0,0,"Dilk Ecart",NA,1,7915,0,"E","521","S"
-"7915_02","Mars","FALSE","F/1618/NA","TRAPPIST-1e",19,"FALSE",1857,0,26,0,0,"Orz Ecart",NA,2,7915,1883,"F","1618",NA
+"7915_02","Mars","FALSE","F/1618/S","TRAPPIST-1e",19,"FALSE",1857,0,26,0,0,"Orz Ecart",NA,2,7915,1883,"F","1618","S"
 "7915_03","Mars","TRUE","E/521/S","TRAPPIST-1e",22,"FALSE",0,0,0,0,0,"Alspil Ecart",NA,3,7915,0,"E","521","S"
 "7917_01","Earth","TRUE","G/1280/P","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Guadae Carterson",NA,1,7917,0,"G","1280","P"
 "7921_01","Mars","FALSE","F/1516/S","TRAPPIST-1e",26,"FALSE",79,66,943,0,69,"Lops Berte",NA,1,7921,1157,"F","1516","S"
@@ -3647,8 +3647,8 @@
 "7934_03","Mars","FALSE","F/1519/S","55 Cancri e",0,"FALSE",0,0,0,0,0,NA,NA,3,7934,0,"F","1519","S"
 "7938_01","Earth","FALSE","G/1285/P","55 Cancri e",40,"FALSE",3657,1107,137,27,0,"Charly Andackson",NA,1,7938,4928,"G","1285","P"
 "7942_01","Earth","FALSE","E/515/P","TRAPPIST-1e",25,"FALSE",0,5,1,1614,0,"Janne Hales",NA,1,7942,1620,"E","515","P"
-"7942_02","Earth","FALSE","G/1322/NA","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Ralda Hales",NA,2,7942,0,"G","1322",NA
-"7948_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",28,"FALSE",2,0,0,754,0,"Elinda Flynner",NA,1,7948,756,"F","1618",NA
+"7942_02","Earth","FALSE","G/1322/S","TRAPPIST-1e",2,"FALSE",0,0,0,0,0,"Ralda Hales",NA,2,7942,0,"G","1322","S"
+"7948_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",28,"FALSE",2,0,0,754,0,"Elinda Flynner",NA,1,7948,756,"F","1618","P"
 "7951_01","Europa","TRUE","B/259/P","55 Cancri e",14,"FALSE",0,0,0,0,0,"Beneba Covere",NA,1,7951,0,"B","259","P"
 "7953_01","Earth","FALSE","F/1524/S","TRAPPIST-1e",30,"FALSE",12,0,0,1047,40,NA,NA,1,7953,1099,"F","1524","S"
 "7956_01","Earth","FALSE","G/1289/P","TRAPPIST-1e",21,"FALSE",0,599,0,21,0,NA,NA,1,7956,620,"G","1289","P"
@@ -3778,7 +3778,7 @@
 "8258_01","Mars","FALSE","F/1581/S","TRAPPIST-1e",26,"FALSE",2459,4,18,0,0,"Anack Datte",NA,1,8258,2481,"F","1581","S"
 "8262_01","Mars","FALSE","D/244/S","TRAPPIST-1e",50,"FALSE",0,355,48,73,5,"Cors Man",NA,1,8262,481,"D","244","S"
 "8263_01","Mars","FALSE","F/1583/S","TRAPPIST-1e",22,"FALSE",1025,0,77,17,0,"Beals Win",NA,1,8263,1119,"F","1583","S"
-"8269_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",25,"FALSE",4,0,1260,0,0,"Gretty Smalls",NA,1,8269,1264,"F","1618",NA
+"8269_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",25,"FALSE",4,0,1260,0,0,"Gretty Smalls",NA,1,8269,1264,"F","1618","P"
 "8274_01","Earth","FALSE","G/1347/P","55 Cancri e",37,"FALSE",30,0,879,0,0,"Pennie Miltongson",NA,1,8274,909,"G","1347","P"
 "8278_01","Earth","TRUE","G/1335/S","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Walley Weaves",NA,1,8278,0,"G","1335","S"
 "8283_01","Europa","TRUE","B/274/P","55 Cancri e",38,"FALSE",0,0,0,0,0,"Muonon Heedry",NA,1,8283,0,"B","274","P"
@@ -3798,7 +3798,7 @@
 "8305_03","Europa","TRUE","B/322/S","TRAPPIST-1e",33,"FALSE",0,0,0,0,0,"Sadirk Fansty",NA,3,8305,0,"B","322","S"
 "8308_01","Earth","FALSE","F/1708/P","PSO J318.5-22",45,"FALSE",0,0,9,2536,4,"Kaye Hanner",NA,1,8308,2549,"F","1708","P"
 "8309_01","Europa","FALSE","C/276/P","55 Cancri e",25,"FALSE",44,5330,0,2119,276,"Sadlami Modomel",NA,1,8309,7769,"C","276","P"
-"8311_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",21,"FALSE",1,7,67,701,1,"Debora Petton",NA,1,8311,777,"F","1618",NA
+"8311_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",21,"FALSE",1,7,67,701,1,"Debora Petton",NA,1,8311,777,"F","1618","P"
 "8312_01","Mars","TRUE","F/1597/S","Other",22,"FALSE",0,0,0,0,0,"Cocors Cola",NA,1,8312,0,"F","1597","S"
 "8325_01","Earth","TRUE","G/1342/S","TRAPPIST-1e",27,"FALSE",0,0,0,0,0,"Ambert Horners",NA,1,8325,0,"G","1342","S"
 "8325_02","Earth","FALSE","F/1599/S","TRAPPIST-1e",33,"FALSE",0,441,0,0,1113,"Gerly Horners",NA,2,8325,1554,"F","1599","S"
@@ -3863,7 +3863,7 @@
 "8440_01","Mars","FALSE","F/1731/P","55 Cancri e",24,"FALSE",698,0,64,259,150,"Stote Meate",NA,1,8440,1171,"F","1731","P"
 "8440_02","Mars","TRUE","F/1731/P","TRAPPIST-1e",3,"FALSE",0,0,0,0,0,"Frunch Meate",NA,2,8440,0,"F","1731","P"
 "8440_03","Mars","TRUE","F/1731/P","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Eloos Meate",NA,3,8440,0,"F","1731","P"
-"8443_01","Mars","TRUE","F/1618/NA","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Crans Ste",NA,1,8443,0,"F","1618",NA
+"8443_01","Mars","TRUE","F/1618/P","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Crans Ste",NA,1,8443,0,"F","1618","P"
 "8443_02","Mars","FALSE","F/1732/P","TRAPPIST-1e",45,"FALSE",2146,0,451,2,0,"Forms Ste",NA,2,8443,2599,"F","1732","P"
 "8445_01","Earth","TRUE","G/1353/S","PSO J318.5-22",29,"FALSE",0,0,0,0,0,"Dennya Toddleton",NA,1,8445,0,"G","1353","S"
 "8445_02","Earth","TRUE","G/1353/S","TRAPPIST-1e",54,"FALSE",0,0,0,0,0,"Elenna Nguerrettye",NA,2,8445,0,"G","1353","S"
@@ -3884,7 +3884,7 @@
 "8484_01","Mars","TRUE","F/1634/S","TRAPPIST-1e",39,"FALSE",0,0,0,0,0,"Cousk Welte",NA,1,8484,0,"F","1634","S"
 "8485_01","Earth","TRUE","G/1359/S","PSO J318.5-22",55,"FALSE",0,0,0,0,0,"Bertle Hammons",NA,1,8485,0,"G","1359","S"
 "8488_01","Europa","FALSE","D/264/P","55 Cancri e",24,"FALSE",183,3156,0,19,1518,"Zubeneb Camaxler",NA,1,8488,4876,"D","264","P"
-"8490_01","Mars","FALSE","F/1618/NA","TRAPPIST-1e",29.877177508269,"FALSE",1485,0,8,0,0,"Hoow Swin",NA,1,8490,1493,"F","1618",NA
+"8490_01","Mars","FALSE","F/1618/P","TRAPPIST-1e",29.877177508269,"FALSE",1485,0,8,0,0,"Hoow Swin",NA,1,8490,1493,"F","1618","P"
 "8496_01","Earth","FALSE","F/1741/P","TRAPPIST-1e",27,"FALSE",6,0,395,248,17,"Brinez Alberts",NA,1,8496,666,"F","1741","P"
 "8497_01","Earth","FALSE","G/1361/S","TRAPPIST-1e",19,"FALSE",0,0,0,0,0,"Bara Adkinson",NA,1,8497,0,"G","1361","S"
 "8498_01","Earth","FALSE","F/1742/P","TRAPPIST-1e",27,"FALSE",0,394,1,291,1,"Elenna Potthews",NA,1,8498,687,"F","1742","P"
@@ -4096,7 +4096,7 @@
 "8913_01","Earth","TRUE","G/1444/P","TRAPPIST-1e",39,"FALSE",0,0,0,0,0,"Jodyn Bellarkerd",NA,1,8913,0,"G","1444","P"
 "8913_02","Earth","TRUE","G/1444/P","TRAPPIST-1e",1,"FALSE",0,0,0,0,0,"Luise Bellarkerd",NA,2,8913,0,"G","1444","P"
 "8913_03","Earth","FALSE","G/1444/P","55 Cancri e",5,"FALSE",0,0,0,0,0,"Lloyde Bellarkerd",NA,3,8913,0,"G","1444","P"
-"8914_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",23,"FALSE",2,598,20,0,189,"Dwigh Hoodgers",NA,1,8914,809,"F","1618",NA
+"8914_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",23,"FALSE",2,598,20,0,189,"Dwigh Hoodgers",NA,1,8914,809,"F","1618","P"
 "8915_01","Earth","FALSE","G/1446/P","TRAPPIST-1e",41,"FALSE",0,0,0,2,906,"Coracy Leonzaley",NA,1,8915,908,"G","1446","P"
 "8916_01","Earth","TRUE","G/1447/P","TRAPPIST-1e",39,"FALSE",0,0,0,0,0,"Joela Gordanieves",NA,1,8916,0,"G","1447","P"
 "8917_01","Earth","TRUE","G/1440/S","TRAPPIST-1e",26,"FALSE",0,0,0,0,0,"Kentha Hendrys",NA,1,8917,0,"G","1440","S"
@@ -4128,7 +4128,7 @@
 "8960_02","Earth","FALSE","G/1444/S","TRAPPIST-1e",21,"FALSE",0,0,2,188,620,"Bobara Solon",NA,2,8960,810,"G","1444","S"
 "8960_03","Earth","TRUE","G/1444/S","TRAPPIST-1e",0,"FALSE",0,0,0,0,0,"Andan Solon",NA,3,8960,0,"G","1444","S"
 "8962_01","Earth","FALSE","F/1733/S","TRAPPIST-1e",23,"FALSE",145,0,0,376,928,"Justie Tuckers",NA,1,8962,1449,"F","1733","S"
-"8963_01","Europa","TRUE","B/292/NA","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Tetratz Inghting",NA,1,8963,0,"B","292",NA
+"8963_01","Europa","TRUE","B/292/P","TRAPPIST-1e",25,"FALSE",0,0,0,0,0,"Tetratz Inghting",NA,1,8963,0,"B","292","P"
 "8965_01","Mars","FALSE","D/271/S","TRAPPIST-1e",32,"FALSE",773,0,25,11,0,"Trine Wate",NA,1,8965,809,"D","271","S"
 "8971_01","Europa","FALSE","B/290/P","TRAPPIST-1e",46,"FALSE",0,0,0,0,0,"Betenar Reetholt",NA,1,8971,0,"B","290","P"
 "8974_01","Europa","TRUE","C/301/P","55 Cancri e",28,"FALSE",0,0,0,0,0,"Lesaton Fanchy",NA,1,8974,0,"C","301","P"
@@ -4140,7 +4140,7 @@
 "8980_05","Mars","FALSE","D/273/S","Other",73,"FALSE",669,85,943,1627,0,"Wee Brie",NA,5,8980,3324,"D","273","S"
 "8980_06","Mars","TRUE","D/273/S","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Jetax Brie",NA,6,8980,0,"D","273","S"
 "8980_07","Mars","TRUE","D/273/S","TRAPPIST-1e",20,"FALSE",0,0,0,0,0,"Rangma Brie",NA,7,8980,0,"D","273","S"
-"8984_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",15,"FALSE",0,0,3,8,998,"Helley Bellyonsley",NA,1,8984,1009,"F","1618",NA
+"8984_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",15,"FALSE",0,0,3,8,998,"Helley Bellyonsley",NA,1,8984,1009,"F","1618","P"
 "8990_01","Earth","TRUE","G/1457/P","TRAPPIST-1e",55,"FALSE",0,0,0,0,0,"Allena Petton",NA,1,8990,0,"G","1457","P"
 "8991_01","Earth","FALSE","F/1843/P","TRAPPIST-1e",42,"FALSE",0,715,0,109,0,"Stany Potterry",NA,1,8991,824,"F","1843","P"
 "8994_01","Mars","FALSE","F/1845/P","TRAPPIST-1e",39,"FALSE",2416,6,70,106,0,"Wifts Flie",NA,1,8994,2598,"F","1845","P"
@@ -4175,14 +4175,14 @@
 "9054_01","Earth","TRUE","G/1458/S","55 Cancri e",8,"FALSE",0,0,0,0,0,"Coreee Harry",NA,1,9054,0,"G","1458","S"
 "9055_01","Earth","FALSE","F/1852/P","PSO J318.5-22",59,"FALSE",12,18,798,0,393,"Crisey Clinantones",NA,1,9055,1221,"F","1852","P"
 "9056_01","Europa","FALSE","D/289/P","TRAPPIST-1e",51,"FALSE",294,153,0,1225,4,"Luxab Burcaling",NA,1,9056,1676,"D","289","P"
-"9058_01","Mars","FALSE","F/1618/NA","TRAPPIST-1e",38,"FALSE",784,0,42,38,10,"Hammet Muff",NA,1,9058,874,"F","1618",NA
+"9058_01","Mars","FALSE","F/1618/P","TRAPPIST-1e",38,"FALSE",784,0,42,38,10,"Hammet Muff",NA,1,9058,874,"F","1618","P"
 "9062_01","Earth","FALSE","F/1854/P","TRAPPIST-1e",26,"FALSE",1576,0,47,1366,3,"Ellene Pughlinsons",NA,1,9062,2992,"F","1854","P"
-"9062_02","Earth","TRUE","G/1322/NA","TRAPPIST-1e",65,"FALSE",0,0,0,0,0,"Lerion Pughlinsons",NA,2,9062,0,"G","1322",NA
+"9062_02","Earth","TRUE","G/1322/S","TRAPPIST-1e",65,"FALSE",0,0,0,0,0,"Lerion Pughlinsons",NA,2,9062,0,"G","1322","S"
 "9063_01","Europa","TRUE","B/346/S","55 Cancri e",36,"FALSE",0,0,0,0,0,"Pollus Lansuffle",NA,1,9063,0,"B","346","S"
 "9065_01","Mars","TRUE","F/1755/S","TRAPPIST-1e",27.4868035190616,"FALSE",0,0,0,0,0,"Jet Bart",NA,1,9065,0,"F","1755","S"
 "9067_01","Earth","FALSE","G/1459/S","TRAPPIST-1e",14,"FALSE",11,292,713,777,0,"Janney Baxters",NA,1,9067,1793,"G","1459","S"
 "9067_02","Earth","TRUE","G/1459/S","TRAPPIST-1e",9,"FALSE",0,0,0,0,0,"Dellia Baxters",NA,2,9067,0,"G","1459","S"
-"9070_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",20,"FALSE",323,0,542,0,0,"Oraryn Flynney",NA,1,9070,865,"F","1618",NA
+"9070_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",20,"FALSE",323,0,542,0,0,"Oraryn Flynney",NA,1,9070,865,"F","1618","P"
 "9070_02","Earth","FALSE","F/1757/S","TRAPPIST-1e",19,"FALSE",177,1058,0,0,0,"Elancy Flynney",NA,2,9070,1235,"F","1757","S"
 "9082_01","Earth","FALSE","G/1477/P","55 Cancri e",20,"FALSE",0,0,0,628,0,"Deaney Holton",NA,1,9082,628,"G","1477","P"
 "9083_01","Mars","TRUE","F/1859/P","TRAPPIST-1e",34,"FALSE",0,0,0,0,0,"Beres Sto",NA,1,9083,0,"F","1859","P"
@@ -4208,7 +4208,7 @@
 "9123_01","Mars","TRUE","F/1764/S","TRAPPIST-1e",53,"FALSE",0,0,0,0,0,"Bonutz Kidne",NA,1,9123,0,"F","1764","S"
 "9133_01","Earth","TRUE","G/1486/P","TRAPPIST-1e",27,"FALSE",0,0,0,0,0,"Stendy Rutler",NA,1,9133,0,"G","1486","P"
 "9135_01","Earth","FALSE","G/1487/P","PSO J318.5-22",23,"FALSE",383,0,296,0,0,"Troya Quinnedy",NA,1,9135,679,"G","1487","P"
-"9138_01","Europa","FALSE","C/292/NA","TRAPPIST-1e",41,"FALSE",0,1998,0,1023,867,"Misamak Trupistic",NA,1,9138,3888,"C","292",NA
+"9138_01","Europa","FALSE","C/292/P","TRAPPIST-1e",41,"FALSE",0,1998,0,1023,867,"Misamak Trupistic",NA,1,9138,3888,"C","292","P"
 "9143_01","Earth","FALSE","G/1472/S","TRAPPIST-1e",28,"FALSE",97,0,0,0,1720,"Joelan Ricklaney",NA,1,9143,1817,"G","1472","S"
 "9143_02","Earth","FALSE","F/1767/S","55 Cancri e",18,"FALSE",1181,0,0,3,1,"Andice Ricklaney",NA,2,9143,1185,"F","1767","S"
 "9143_03","Earth","FALSE","G/1472/S","TRAPPIST-1e",18,"FALSE",31,0,0,910,3,"Eillis Rushorney",NA,3,9143,944,"G","1472","S"
@@ -4247,8 +4247,8 @@
 "9214_01","Europa","FALSE","C/341/S","TRAPPIST-1e",32,"FALSE",523,2,0,16,14834,"Alatrix Mirinanty",NA,1,9214,15375,"C","341","S"
 "9215_01","Europa","TRUE","A/96/P","TRAPPIST-1e",42,"FALSE",0,0,0,0,0,"Dubheat Supriouse",NA,1,9215,0,"A","96","P"
 "9216_01","Earth","FALSE","F/1885/P","TRAPPIST-1e",22,"FALSE",0,147,3,0,494,"Luise Barrez",NA,1,9216,644,"F","1885","P"
-"9223_01","Mars","TRUE","F/1618/NA","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Weessh Sun",NA,1,9223,0,"F","1618",NA
-"9223_02","Mars","TRUE","F/1618/NA","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Perit Sun",NA,2,9223,0,"F","1618",NA
+"9223_01","Mars","TRUE","F/1618/P","TRAPPIST-1e",24,"FALSE",0,0,0,0,0,"Weessh Sun",NA,1,9223,0,"F","1618","P"
+"9223_02","Mars","TRUE","F/1618/S","TRAPPIST-1e",17,"FALSE",0,0,0,0,0,"Perit Sun",NA,2,9223,0,"F","1618","S"
 "9228_01","Earth","FALSE","F/1887/P","TRAPPIST-1e",21,"FALSE",640,0,21,0,76,"Davis Bulliamoses",NA,1,9228,737,"F","1887","P"
 "9229_01","Mars","FALSE","E/605/S","TRAPPIST-1e",24,"FALSE",0,32,282,1,0,"Colal Brity",NA,1,9229,315,"E","605","S"
 "9232_01","Earth","FALSE","G/1499/P","TRAPPIST-1e",41,"FALSE",652,0,112,10,0,"Berly Roses",NA,1,9232,774,"G","1499","P"
@@ -4257,7 +4257,7 @@
 "9238_02","Earth","TRUE","G/1501/P","55 Cancri e",3,"FALSE",0,0,0,0,0,"Ricke Emenez",NA,2,9238,0,"G","1501","P"
 "9238_03","Earth","TRUE","G/1501/P","TRAPPIST-1e",16,"FALSE",0,0,0,0,0,"Herina Emenez",NA,3,9238,0,"G","1501","P"
 "9238_04","Earth","FALSE","G/1501/P","TRAPPIST-1e",26,"FALSE",882,2,0,0,0,"Marlie Emenez",NA,4,9238,884,"G","1501","P"
-"9238_05","Earth","TRUE","G/1322/NA","TRAPPIST-1e",14,"FALSE",0,0,0,0,0,"Caseye Emenez",NA,5,9238,0,"G","1322",NA
+"9238_05","Earth","TRUE","G/1322/S","TRAPPIST-1e",14,"FALSE",0,0,0,0,0,"Caseye Emenez",NA,5,9238,0,"G","1322","S"
 "9238_06","Earth","FALSE","G/1501/P","55 Cancri e",0,"FALSE",0,0,0,0,0,"Blance Garnettiz",NA,6,9238,0,"G","1501","P"
 "9238_07","Earth","FALSE","F/1890/P","TRAPPIST-1e",32,"FALSE",115,0,2156,486,0,"Camie Emenez",NA,7,9238,2757,"F","1890","P"
 "9240_01","Earth","FALSE","E/594/P","TRAPPIST-1e",15,"FALSE",0,0,4,0,618,"Glendy Reenon",NA,1,9240,622,"E","594","P"
@@ -4272,7 +4272,7 @@
 "9265_01","Mars","FALSE","D/278/S","TRAPPIST-1e",43,"FALSE",47,0,3851,0,0,"Toate Cure",NA,1,9265,3898,"D","278","S"
 "9266_01","Earth","FALSE","F/1796/S","TRAPPIST-1e",40,"FALSE",0,865,0,3,0,"Danna Peter",NA,1,9266,868,"F","1796","S"
 "9266_02","Earth","TRUE","G/1496/S","TRAPPIST-1e",34,"FALSE",0,0,0,0,0,"Jeron Peter",NA,2,9266,0,"G","1496","S"
-"9269_01","Earth","FALSE","F/1618/NA","TRAPPIST-1e",42,"FALSE",0,847,17,10,144,"Matty Scheron",NA,1,9269,1018,"F","1618",NA
+"9269_01","Earth","FALSE","F/1618/P","TRAPPIST-1e",42,"FALSE",0,847,17,10,144,"Matty Scheron",NA,1,9269,1018,"F","1618","P"
 "9271_01","Mars","TRUE","D/296/P","55 Cancri e",33.0651416122004,"FALSE",0,0,0,0,0,"Jayrin Pore",NA,1,9271,0,"D","296","P"
 "9273_01","Europa","FALSE","D/297/P","Other",33.0651416122004,"FALSE",0,2680,0,0,523,"Kitakan Conale",NA,1,9273,3203,"D","297","P"
 "9277_01","Earth","TRUE","G/1498/S","PSO J318.5-22",43,"FALSE",0,0,0,0,0,"Lilace Leonzaley",NA,1,9277,0,"G","1498","S"

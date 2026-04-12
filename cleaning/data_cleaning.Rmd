@@ -263,22 +263,22 @@ combined$VIP         <- as.factor(combined$VIP)
 combined$Deck        <- as.factor(combined$Deck)
 combined$Side        <- as.factor(combined$Side)
 
-train_cabin <- combined %>% dplyr::filter(!is.na(Side))
-missing_cabin <- combined %>% dplyr::filter(is.na(Side))
+train_side <- combined %>% dplyr::filter(!is.na(Side))
+missing_side <- combined %>% dplyr::filter(is.na(Side))
 
 
-cabin_model <- rpart(
+side_model <- rpart(
   Side ~ HomePlanet + CryoSleep + Destination + Age + VIP +
-              RoomService + FoodCourt + ShoppingMall + Spa + VRDeck +
-              Group + Number + total_spending + Deck + Cabin_num,
-  data = train_cabin,
-  method = "anova", 
+         RoomService + FoodCourt + ShoppingMall + Spa + VRDeck +
+         Group + Number + total_spending + Deck + Cabin_num,
+  data = train_side,
+  method = "class",
   control = rpart.control(maxdepth = 6, minsplit = 20)
 )
 
-predicted_side <- predict(cabin_model, missing_cabin)
-
-combined$Cabin_num[is.na(combined$Cabin_num)] <- round(predicted_side)
+predicted_side <- predict(side_model, missing_side, type = "class")
+predicted_side <- factor(predicted_side, levels = levels(combined$Side))
+combined$Side[is.na(combined$Side)] <- predicted_side
 
 data <- combined %>% 
   dplyr::filter(dataset == "train") %>% 
@@ -313,6 +313,10 @@ test <- test %>%
     )
   )
 ```
+```{r}
+colSums(is.na(data))
+```
+
 
 # Save File after cleaning.
 ```{r}

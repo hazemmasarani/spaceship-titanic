@@ -41,9 +41,9 @@ head(test)
 
 # Select only important columns
 ```{r}
-selected_columns <- c("CryoSleep", "Age", "VIP", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "total_spending", "Cabin_num", "Side", "Number", "GroupNumberCount", "FamilyMembersCount", "FamilyMembersCabinCount", "NameFlag", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "DeckG_midCabin", "DeckE_midCabin", "DeckF_midCabin", "CryoSleep_spending_conflict", "Transported")
-
-# data <- data[, selected_columns]
+selected_columns <- c("Transported", "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck", "LuxurySpendings", "MainSpendings", "total_spending", "CryoSleep", "Age", "VIP", "Cabin_num", "Side", "Number", "GroupNumberCount", "FamilyMembersCount", "FamilyMembersCabinCount", "NameFlag", "CabinMidFlag", "HomePlanetEarth", "HomePlanetEuropa", "HomePlanetMars", "HomePlanetOther", "Destination55 Cancri e", "DestinationPSO J318.5-22", "DestinationTRAPPIST-1e", "DestinationOther", "Group1", "Group2", "Group3", "Group4", "Group5", "Group6", "Group7", "DeckA", "DeckB", "DeckC", "DeckD", "DeckE", "DeckF", "DeckG", "DeckG_midCabin", "DeckE_midCabin", "DeckF_midCabin")
+data$Transported <- as.numeric(data$Transported)
+data <- data[, selected_columns]
 ```
 
 # Print corolation heatmap of all numeric features
@@ -66,7 +66,41 @@ ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
   ) +
   labs(fill = "Correlation", title = "Correlation Heatmap")
 ```
+# Spending Analysis
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
 
+spending_cols <- c("RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck")
+
+dd <- data[data$CryoSleep == FALSE, ]
+
+df <- dd %>%
+  dplyr::select(Deck, dplyr::all_of(spending_cols))
+
+df_long <- df %>%
+  pivot_longer(
+    cols = all_of(spending_cols),
+    names_to = "Category",
+    values_to = "Spending"
+  )
+
+df_summary <- df_long %>%
+  group_by(Deck, Category) %>%
+  summarise(mean_spending = mean(Spending, na.rm = TRUE), .groups = "drop")
+
+ggplot(df_summary, aes(x = Deck, y = mean_spending, fill = Category)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_minimal() +
+  labs(
+    title = "Average Spending per Deck by Category",
+    x = "Deck",
+    y = "Average Spending",
+    fill = "Spending Type"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 # Cabin Number Analysis
 ```{r}
@@ -152,11 +186,7 @@ ggplot(data, aes(x = factor(VIP), y = Age)) +
   geom_boxplot()
 ```
 
-
-# Show all final columns
 ```{r}
-
+colnames(data)
 ```
-
-
 
