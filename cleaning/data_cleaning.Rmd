@@ -137,6 +137,12 @@ data$total_spending <- rowSums(data[spending_cols], na.rm = TRUE)
 test$total_spending <- rowSums(test[spending_cols], na.rm = TRUE)
 ```
 
+# Fill missing cryosleep with FASLE
+```{r}
+data$CryoSleep[is.na(data$CryoSleep)] <- FALSE
+test$CryoSleep[is.na(test$CryoSleep)] <- FALSE
+```
+
 # Split Cabin into Deck, Cabin_num, Side
 ```{r}
 # Cabin Number Split:
@@ -144,130 +150,88 @@ data[c("Deck", "Cabin_num", "Side")] <- do.call(rbind, strsplit(data$Cabin, "/")
 test[c("Deck", "Cabin_num", "Side")] <- do.call(rbind, strsplit(test$Cabin, "/"))
 ```
 
-
-# Fill missing Decks Based on total spending
+# Fill the Deck using DT
 ```{r}
-# Step 1: Compute deck means across both datasets
-combined <- bind_rows(data, test)
-
-deck_means <- combined %>%
-  filter(!is.na(Deck)) %>%   # exclude NAs here
-  group_by(Deck) %>%
-  summarise(mean_total_spending = mean(total_spending, na.rm = TRUE), .groups = "drop")
-
-# Step 2: Function to find closest deck
-closest_deck <- function(spending, deck_means) {
-  distances <- abs(deck_means$mean_total_spending - spending)
-  deck_means$Deck[which.min(distances)]
-}
-
-# Step 3: Fill missing Decks in data
-na_index <- which(is.na(data$Deck))
-data$Deck[na_index] <- sapply(data$total_spending[na_index], closest_deck, deck_means = deck_means)
-
-# Step 4: Fill missing Decks in test
-na_index_test <- which(is.na(test$Deck))
-test$Deck[na_index_test] <- sapply(test$total_spending[na_index_test], closest_deck, deck_means = deck_means)
-```
-
-# Fill the cabin_number with the most frequent number
-```{r}
-# Combine data and test to compute the mode
 combined <- bind_rows(
-  dplyr::select(data, Cabin_num),
-  dplyr::select(test, Cabin_num)
+   mutate(data, dataset = "train"),
+   mutate(test, dataset = "test")
 )
 
-# Compute the most frequent cabin number (mode)
-mode_cabin <- as.numeric(names(sort(table(combined$Cabin_num), decreasing = TRUE)[1]))
+combined$Deck <- as.factor(combined$Deck)
 
-# Fill missing Cabin_num in data
-data$Cabin_num[is.na(data$Cabin_num)] <- mode_cabin
+combined$HomePlanet  <- as.factor(combined$HomePlanet)
+combined$CryoSleep   <- as.factor(combined$CryoSleep)
+combined$Destination <- as.factor(combined$Destination)
+combined$VIP         <- as.factor(combined$VIP)
 
-# Fill missing Cabin_num in test
-test$Cabin_num[is.na(test$Cabin_num)] <- mode_cabin
+train_deck <- combined %>% filter(!is.na(Deck))
+missing_deck <- combined %>% filter(is.na(Deck))
+
+deck_model <- rpart(
+  Deck ~ HomePlanet + CryoSleep + Destination + Age + VIP +
+         RoomService + FoodCourt + ShoppingMall + Spa + VRDeck +
+         Group + Number + total_spending,
+  data = train_deck,
+  method = "class"
+)
+
+predicted_deck <- predict(deck_model, missing_deck, type = "class")
+
+combined$Deck[is.na(combined$Deck)] <- predicted_deck
+
+data <- combined %>% 
+  dplyr::filter(dataset == "train") %>% 
+  dplyr::select(-dataset)
+
+test <- combined %>% 
+  dplyr::filter(dataset == "test") %>% 
+  dplyr::select(-dataset)
 ```
 
-# Fill the missing CryoSleep and convert Side to 0, and 1.
+
+# Fill the cabin Number by the dession Tree model.
 ```{r}
-combined <- bind_rows(data, test)
+combined <- bind_rows(
+  data %>% mutate(dataset = "train"),
+  test %>% mutate(dataset = "test")
+)
 
-get_mode <- function(x) {
-  ux <- unique(x[!is.na(x)])   # remove NAs
-  ux[which.max(tabulate(match(x, ux)))]
-}
+combined$HomePlanet  <- as.factor(combined$HomePlanet)
+combined$CryoSleep   <- as.factor(combined$CryoSleep)
+combined$Destination <- as.factor(combined$Destination)
+combined$VIP         <- as.factor(combined$VIP)
+combined$Deck        <- as.factor(combined$Deck)
 
-deck_cryosleep_mode <- combined %>%
-  filter(!is.na(CryoSleep)) %>%          # ignore NAs
-  group_by(Deck) %>%              # use Deck_filled after imputing Decks
-  summarise(mode_CryoSleep = get_mode(CryoSleep), .groups = "drop")
+train_cabin <- combined %>% dplyr::filter(!is.na(Cabin_num))
+missing_cabin <- combined %>% dplyr::filter(is.na(Cabin_num))
 
-fill_missing_CryoSleep <- function(row){
-  if(is.na(row["CryoSleep"])){
-    if(row["total_spending"] > 0){
-      row["CryoSleep"] <- FALSE
-    }else{
-      row["CryoSleep"] <- deck_cryosleep_mode$mode_CryoSleep[
-        deck_cryosleep_mode$Deck == row["Deck"]
-      ]
-    }
-  }
-  return(row)
-}
+cabin_model <- rpart(
+  Cabin_num ~ HomePlanet + CryoSleep + Destination + Age + VIP +
+              RoomService + FoodCourt + ShoppingMall + Spa + VRDeck +
+              Group + Number + total_spending + Deck,
+  data = train_cabin,
+  method = "anova", 
+  control = rpart.control(maxdepth = 6, minsplit = 20)
+)
 
-# Convert Group to numeric
-convert_side_0_1 <- function(row){
-  if(is.na(row["Side"])){
-    row["Side"] = NA
-  }else if(row["Side"] == "P"){
-    row["Side"] = 1
-  }else{
-    row["Side"] = 0
-  }
-  return(row)
-}
+predicted_cabin <- predict(cabin_model, missing_cabin)
 
-data <- as.data.frame(t(apply(data, 1, fill_missing_CryoSleep)))
-test <- as.data.frame(t(apply(test, 1, fill_missing_CryoSleep)))
+combined$Cabin_num[is.na(combined$Cabin_num)] <- round(predicted_cabin)
 
-data <- as.data.frame(t(apply(data, 1, convert_side_0_1)))
-test <- as.data.frame(t(apply(test, 1, convert_side_0_1)))
+data <- combined %>% 
+  dplyr::filter(dataset == "train") %>% 
+  dplyr::select(-dataset)
 
-data$Age <- as.numeric(data$Age)
-data$RoomService <- as.numeric(data$RoomService)
-data$FoodCourt <- as.numeric(data$FoodCourt)
-data$ShoppingMall <- as.numeric(data$ShoppingMall)
-data$Spa <- as.numeric(data$Spa)
-data$VRDeck <- as.numeric(data$VRDeck)
-data$Group <- as.numeric(data$Group)
-data$Cabin_num <- as.numeric(data$Cabin_num)
-data$total_spending <- as.numeric(data$total_spending)
-
-data$Transported <- as.logical(data$Transported)
-data$CryoSleep   <- as.logical(data$CryoSleep)
-data$VIP         <- as.logical(data$VIP)
-
-data$Transported <- as.numeric(data$Transported)
-data$CryoSleep <- as.numeric(data$CryoSleep)
-data$VIP     <- as.numeric(data$VIP)
-
-test$Age <- as.numeric(test$Age)
-test$RoomService <- as.numeric(test$RoomService)
-test$FoodCourt <- as.numeric(test$FoodCourt)
-test$ShoppingMall <- as.numeric(test$ShoppingMall)
-test$Spa <- as.numeric(test$Spa)
-test$VRDeck <- as.numeric(test$VRDeck)
-test$Group <- as.numeric(test$Group)
-test$Cabin_num <- as.numeric(test$Cabin_num)
-test$total_spending <- as.numeric(test$total_spending)
-
-test$CryoSleep   <- as.logical(test$CryoSleep)
-test$VIP         <- as.logical(test$VIP)
-
-test$CryoSleep <- as.numeric(test$CryoSleep)
-test$VIP       <- as.numeric(test$VIP)
-
+test <- combined %>% 
+  dplyr::filter(dataset == "test") %>% 
+  dplyr::select(-dataset)
 ```
+
+
+```{r}
+head(data)
+```
+
 
 # Fill missing Ages by Dession tree
 ```{r}
@@ -287,63 +251,55 @@ test$Age[is.na(test$Age)] <- predict(age_tree, newdata = test[is.na(test$Age), ]
 
 # Fill missing Side by simple tree model.
 ```{r}
-# Combine
-combined <- bind_rows(data, test)
-
-# Split known and missing Side
-train_side <- combined %>% filter(!is.na(Side))
-missing_side <- combined %>% filter(is.na(Side))
-
-# Predictors
-predictors <- c("HomePlanet", "CryoSleep", "Destination", "Age", "VIP",
-                "RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck",
-                "Group", "Deck")
-
-# Convert character → factor
-train_side[predictors] <- lapply(train_side[predictors], function(x) {
-  if(is.character(x)) factor(x) else x
-})
-
-missing_side[predictors] <- lapply(missing_side[predictors], function(x) {
-  if(is.character(x)) factor(x) else x
-})
-
-# Convert Side to factor (IMPORTANT for classification)
-train_side$Side <- factor(train_side$Side)
-
-# Fit decision tree
-side_tree <- rpart(
-  formula = as.formula(paste("Side ~", paste(predictors, collapse = " + "))),
-  data = train_side,
-  method = "class"
+combined <- bind_rows(
+  data %>% mutate(dataset = "train"),
+  test %>% mutate(dataset = "test")
 )
 
-# Predict missing Side
-predicted_side <- predict(side_tree, newdata = missing_side, type = "class")
+combined$HomePlanet  <- as.factor(combined$HomePlanet)
+combined$CryoSleep   <- as.factor(combined$CryoSleep)
+combined$Destination <- as.factor(combined$Destination)
+combined$VIP         <- as.factor(combined$VIP)
+combined$Deck        <- as.factor(combined$Deck)
+combined$Side        <- as.factor(combined$Side)
 
-# Convert existing Side to numeric
-combined$Side_num <- as.numeric(as.character(combined$Side))
+train_cabin <- combined %>% dplyr::filter(!is.na(Side))
+missing_cabin <- combined %>% dplyr::filter(is.na(Side))
 
-# Fill missing with predictions
-combined$Side_num[is.na(combined$Side_num)] <- as.numeric(as.character(predicted_side))
 
-data$Side <- combined$Side_num[1:nrow(data)]
-test$Side <- combined$Side_num[(nrow(data)+1):nrow(combined)]
+cabin_model <- rpart(
+  Side ~ HomePlanet + CryoSleep + Destination + Age + VIP +
+              RoomService + FoodCourt + ShoppingMall + Spa + VRDeck +
+              Group + Number + total_spending + Deck + Cabin_num,
+  data = train_cabin,
+  method = "anova", 
+  control = rpart.control(maxdepth = 6, minsplit = 20)
+)
+
+predicted_side <- predict(cabin_model, missing_cabin)
+
+combined$Cabin_num[is.na(combined$Cabin_num)] <- round(predicted_side)
+
+data <- combined %>% 
+  dplyr::filter(dataset == "train") %>% 
+  dplyr::select(-dataset)
+
+test <- combined %>% 
+  dplyr::filter(dataset == "test") %>% 
+  dplyr::select(-dataset)
+```
+
+```{r}
+head(data)
 ```
 
 # Fill missing cabins with the predicted Deck/Cabin_num/Side
 ```{r}
 data <- data %>%
-  mutate(Side_char = ifelse(Side == 1, "P", "S"))
-
-test <- test %>%
-  mutate(Side_char = ifelse(Side == 1, "P", "S"))
-
-data <- data %>%
   mutate(
     Cabin = ifelse(
       is.na(Cabin),
-      paste(Deck, Cabin_num, Side_char, sep = "/"),
+      paste(Deck, Cabin_num, Side, sep = "/"),
       Cabin
     )
   )
@@ -352,13 +308,10 @@ test <- test %>%
   mutate(
     Cabin = ifelse(
       is.na(Cabin),
-      paste(Deck, Cabin_num, Side_char, sep = "/"),
+      paste(Deck, Cabin_num, Side, sep = "/"),
       Cabin
     )
   )
-
-data$Side_char <- NULL
-test$Side_char <- NULL
 ```
 
 # Save File after cleaning.
