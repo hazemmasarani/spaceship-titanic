@@ -54,7 +54,7 @@ cor_matrix <- cor(numeric_data, use = "complete.obs")
 
 cor_melted <- melt(cor_matrix)
 
-ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
+p <- ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
   geom_tile() +
   geom_text(aes(label = round(value, 2)), size = 2) +  # show numbers
   scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0) +
@@ -65,6 +65,12 @@ ggplot(cor_melted, aes(x = Var1, y = Var2, fill = value)) +
     axis.text = element_text(size = 10)
   ) +
   labs(fill = "Correlation", title = "Correlation Heatmap")
+p
+ggsave("correlation_heatmap.png",
+       plot = p,
+       width = 12,
+       height = 10,
+       dpi = 600) 
 ```
 # Spending Analysis
 ```{r}
